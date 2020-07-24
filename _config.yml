@@ -1,17 +1,59 @@
-title: Drupal Contractors - Find the Best Drupal Talent Fast!
+title: "DrupalContractors"
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-url: ""
-signup_url: "https://app.drupalcontractors.com/contractors/register"
-support_email: "service@drupalcontractors.com"
+url: "https://www.drupalcontractors.com"
+email: service@esteemed.io
+
+collections:
+  skills:
+    output: true
+    permalink: /:collection/:name
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-get-json
+  - jekyll-datapage-generator
+  - jekyll-menus
+
+jekyll_get_json:
+  - data: profiles
+    json: 'https://khfmg9m8l2.execute-api.us-east-1.amazonaws.com/prod/profiles?channel=CUN3PEEAY'
+  - data: jobs
+    json: 'https://khfmg9m8l2.execute-api.us-east-1.amazonaws.com/prod/jobs'
+  - data: config
+    json: 'https://khfmg9m8l2.execute-api.us-east-1.amazonaws.com/prod/config'
+
+page_gen-dirs: true
+page_gen:
+  - data: "profiles"
+    template: "contractor"
+    name: "id"
+    dir: "profile"
+  - data: "config.titles"
+    template: "contractors"
+    name: "key"
+    dir: "contractors"
+  - data: "config.skills"
+    template: "contractors"
+    name: "key"
+    dir: "skills"
+  - data: "jobs"
+    template: "job"
+    name: "key"
+    dir: "job"
+
 defaults:
-    -
-      scope:
-        path: ""
-      values:
-        layout: "default"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+exclude:
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - vendor
