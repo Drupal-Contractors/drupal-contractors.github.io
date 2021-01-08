@@ -2,7 +2,7 @@
 title: Why We Started Drupal Contractors
 image: "/img/wp-group-photo.jpg"
 description: A place where Drupal community members can network and help one another.
-thumbnail: "/uploads/pexels-marcus-aurelius-4063533.jpg"
+thumbnail: "/img/wp-group-photo.jpg"
 color_overlay: "#009480"
 author: chris-mcgrath
 categories: []
