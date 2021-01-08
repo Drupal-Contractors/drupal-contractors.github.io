@@ -2,7 +2,7 @@
 title: How to Transition Roles as a Developer
 image: "/img/how-to-transition-roles-as-a-developer.jpg"
 description: A place where community members can network and help one another
-thumbnail: "how-to-transition-roles-as-a-developer.jpg"
+thumbnail: "/img/how-to-transition-roles-as-a-developer.jpg"
 color_overlay: "#009480"
 categories: []
 date: 2020-11-09 08:00:00 +0000
