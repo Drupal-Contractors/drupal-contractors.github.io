@@ -27,13 +27,13 @@ team_by_number:
   btn_text: "Learn more"
   btn_link: "/our-history"
   numbers:
-    - number: 08
+    - number: 15
       description: |-
         years strong in Drupal
     - number: 100%
       description: |-
         developers reviewed by Drupal experts
-    - number: 250+
+    - number: 350+
       description: |-
         Drupal developers
 joining_our_team:
