@@ -1129,7 +1129,8 @@
     - User_Interface_Interaction
     - Information_Architecture
     - Websites_&_Microsites
-    - Design_Consulting_&_Usability_Consulting
+    - Design_Consulting
+    - Usability_Consulting
     - Web_Design
     - Mobile_Design
     - Responsive_Design
@@ -1178,11 +1179,6 @@
     - Drupal_7
     - Drupal_6
     - Drupal_5
-    - Apple_WebObjects_5.1_Application_Server
-    - Microsoft_Transaction_Server_(MTS)
-    - Microsoft_Commerce_Server
-    - Internet_Information_Server_(IIS)
-    - Microsoft_Windows_Load_Balancing_Server
     - PHP
     - JavaScript
     - Java
