@@ -10,8 +10,10 @@ support_email: "service@drupalcontractors.com"
 # Build settings
 markdown: kramdown
 defaults:
-    -
-      scope:
-        path: ""
-      values:
-        layout: "default"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+exclude:
+  - .jekyll-cache
