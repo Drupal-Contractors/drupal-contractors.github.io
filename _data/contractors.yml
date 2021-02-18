@@ -241,6 +241,9 @@ qa_tester:
   title: "Hire your next star QA tester to scale your business."
   image: "/assets/img/contractors/qa_tester.png"
   profiles:
+    - abigail-k
+    - damodaran-k
+    - matthew-b
   description_image: "/assets/img/role-based-photos/qa-tester.jpg"
   description: |-
     QA testers help to eliminate errors across websites, software, or mobile applications. Successful software projects require skilled individuals who can quickly resolve issues.
