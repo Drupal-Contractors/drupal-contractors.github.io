@@ -1197,3 +1197,88 @@
     I'm best suited for Senior Architect/Technical Team Leader roles where I work with the CTO or Engineering Manager to build the team, plan the project and bring it to life for clients ranging from Docusign.com, to UCSF, to CBS.com to Tesla.com.
 
     EXPERIENCE: Expert/Advanced
+
+- id: "abigail-k"
+  name: "Abigail K."
+  image: "/assets/img/profiles/abigail-kesler.jpg"
+  location: "Dayton, OH"
+  availability: "hours_40"
+  english: proficient
+  titles:
+    - qa_tester
+  skills:
+    - Certified Drupal Developer
+    - Custom themes
+    - Drupal 7/8 customization
+    - Faceted Search
+    - Back-end development
+    - Front-end development
+    - GIT
+    - Mobile responsive
+    - Pantheon
+    - CSS3
+    - Google Analytics
+  citizenship: citizen
+  drupal_experience: Intermediate
+  drupal_bio: |-
+    The current focus includes Drupal 8 websites (including custom work), best SEO practices, email marketing campaigns, and projects in React.
+
+    EXPERIENCE: Intermediate
+
+- id: "damodaran-k"
+  name: "Damodaran K."
+  image: "/assets/img/profiles/damodaran-krishnan.jpg"
+  location: "Bangalore, KA"
+  availability: "hours_40"
+  english: proficient
+  titles:
+    - qa_tester
+  skills:
+    - Drupal 8
+    - GIT
+    - Git-flow
+    - LAMP Stack
+    - MariaDB/MySQL
+    - PHP 7
+    - QA
+    - CSS/CSS3
+    - Drupal Console
+    - Drush
+    - HTML/HTML5
+    - JavaScript / jQuery
+    - jQuery
+    - Theming
+    - Drupal 7
+    - Content Mangement
+  citizenship: citizen
+  drupal_experience: Intermediate
+  drupal_bio: |-
+    Experienced Drupal Professional with 5+ years of experience in Custom Module Development, Site Building, Website Development & Optimization. Experienced in Drupal concepts and standards for website architecture. Experienced in Design, develop Drupal-based solutions.
+
+    EXPERIENCE: Intermediate
+
+- id: "matthew-b"
+  name: "Matthew B."
+  image: "/assets/img/profiles/matthew-bailey.jpg"
+  location: "Hanover, MA"
+  availability: "hours_10"
+  english: proficient
+  titles:
+    - qa_tester
+  skills:
+    - QA
+    - Adobe photoshop
+    - Google Analytics
+    - SEO
+    - Search Engine Optimization
+    - Information Architecture
+    - Content Management
+    - Project Management
+    - Requirements gathering
+    - Accessibility
+  citizenship: citizen
+  drupal_experience: Intermediate
+  drupal_bio: |-
+    Digital project manager with strong background in project management, web content, strategy, infrastructure & digital systems. I have years of experience developing strategy and managing big-picture solutions with a progressive look at all digital touchpoints (websites, accessibility, SEO, email marketing, privacy policies, etc.)
+
+    EXPERIENCE: Intermediate
