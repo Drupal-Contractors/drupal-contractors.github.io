@@ -21,6 +21,7 @@ logo:
 getting_started_img_1: /assets/img/contractor_1.png
 getting_started_img_2: /assets/img/jobs_0.png
 favicon: /assets/img/dcont-favicon.svg
+homepage_hero_img: /assets/img/dcont-polaroid.png
 
 collections:
   skills:
