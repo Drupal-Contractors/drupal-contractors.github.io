@@ -9,11 +9,11 @@ thumbnail: "/uploads/charles-deluvio-pjah2ax4uwk-unsplash.jpg"
 color_overlay: ''
 
 ---
-Imagine you're a DIYer, getting ready to remodel your house.
+Pretend you're a DIYer, getting ready to remodel your house. 
 
-Imagine you're heading over to your favorite home center for supplies to construct your walls, run some electrical wiring, and pick up some kitchen cabinets.
+You head over to your favorite home center for supplies to construct your walls, run some electrical wiring, and pick up some kitchen cabinets.
 
-Imagine you walk in and instead of seeing all these items, you find pine trees that you need to cut on your own, and copper nuggets that you're expected to melt down and shape into wiring.
+Imagine: instead of seeing all these items once you walk in, you find pine trees that you need to cut on your own, and copper nuggets that you're expected to melt down and shape into wiring.
 
 Sounds pretty ridiculous, doesn’t it?
 
@@ -21,7 +21,7 @@ Well, once upon a time home builders actually did cut down trees and mill their 
 
 We can draw a parallel between home-renovation and web development. In the past we were expected to build our own menu system, forms, user and login systems, all from scratch. Thankfully, Drupal comes with all of these out of the box.
 
-However, there are lots of holes that need to be filled! But, there are some great add-on modules. Many serve the same or similar purpose, some compliment others. They fit into many categories. Often, it's up to you to decide the best combination. Let’s take a look at some of our favorites below.
+There are lots of holes that need to be filled — luckily, there are some great add-on modules. Many serve the same or similar purpose, some compliment others. They fit into many categories. Often, it's up to you to decide the best combination. Let’s take a look at some of our favorites below.
 
 ### **Presentation Modules**
 
@@ -194,7 +194,7 @@ The answer? Dropdown menus listing all of those child pages in a nested fashion 
 
 #### [Devel](https://www.drupal.org/project/devel){:target="_blank"}
 
-Devel is a solid choice for troubleshooting Drupal and testing new code. The Devel module also provides a module called _Web Profiler_ which can help you troubleshoot performance issues. It provides a customizable toolbar at the bottom of the window of your website with a wealth of information you can use to troubleshoot and optimize your site. To learn more about using the Web Profiler module, watch this video by [WebWash](https://www.youtube.com/watch?v=pHf128w-1QQ&feature=emb_title). 
+Devel is a solid choice for troubleshooting Drupal and testing new code. The Devel module also provides a module called _Web Profiler_ which can help you troubleshoot performance issues. It provides a customizable toolbar at the bottom of the window of your website with a wealth of information you can use to troubleshoot and optimize your site. To learn more about using the Web Profiler module, watch this video by [WebWash](https://www.youtube.com/watch?v=pHf128w-1QQ&feature=emb_title).
 
 #### Benefits of Devel
 
@@ -202,7 +202,7 @@ Devel is a solid choice for troubleshooting Drupal and testing new code. The Dev
 
 #### [Devel PHP](https://www.drupal.org/project/devel_php)
 
-The ability to run PHP commands from a development page in Drupal has been removed from the Devel module. This module adds it back in. Install the module, navigate to _your-site/devel/php_, and you have a window where you can drop in any PHP code. 
+The ability to run PHP commands from a development page in Drupal has been removed from the Devel module. This module adds it back in. Install the module, navigate to _your-site/devel/php_, and you have a window where you can drop in any PHP code.
 
 It’s a great tool! Just make sure that you use the Devel modules in development environments only, and never enable them on a production website due to security concerns.
 
@@ -212,7 +212,7 @@ It’s a great tool! Just make sure that you use the Devel modules in developmen
 
 #### [Backup/Migrate](https://www.drupal.org/project/backup_migrate){:target="_blank"}
 
-This module is a fantastic tool for creating database backups of your website and migrating that data to another site. It provides you with an easy to use interface with options to create backups, manage and download those backups, and of course, upload and restore your backups. This makes it easy to migrate your database to another server or even your local development machine by downloading your backup, navigating to the Backup/Migrate screen on your target installation and importing that backup file. 
+This module is a fantastic tool for creating database backups of your website and migrating that data to another site. It provides you with an easy to use interface with options to create backups, manage and download those backups, and of course, upload and restore your backups. This makes it easy to migrate your database to another server or even your local development machine by downloading your backup, navigating to the Backup/Migrate screen on your target installation and importing that backup file.
 
 If you don’t want to run all of these activities from the command line like a true geek, this is definitely a must have tool for you.
 
@@ -223,9 +223,9 @@ If you don’t want to run all of these activities from the command line like a 
 
 #### [Entity Embed Module](https://www.drupal.org/project/entity_embed){:target="_blank"}
 
-Ever want to have a node teaser show up on another node? Well, the old fashioned approach was to add a node_embed field, which essentially added a field that needed to be themed and positioned in a fairly rigid manner. And what if you wanted to include an image? Now you needed an image field. Every time you wanted to display another piece of content, you had to request yet another field. Why couldn’t you just drop in content on demand? 
+Ever want to have a node teaser show up on another node? Well, the old fashioned approach was to add a node_embed field, which essentially added a field that needed to be themed and positioned in a fairly rigid manner. And what if you wanted to include an image? Now you needed an image field. Every time you wanted to display another piece of content, you had to request yet another field. Why couldn’t you just drop in content on demand?
 
-With the Entity Embed module, you can create custom embed types, such as one for nodes. A button is created for each type which you can add to the CKEditor bar and even customize the icon for the button. Then, when editing full text fields in your content, you just click a button to insert one of your custom embed types into the text. 
+With the Entity Embed module, you can create custom embed types, such as one for nodes. A button is created for each type which you can add to the CKEditor bar and even customize the icon for the button. Then, when editing full text fields in your content, you just click a button to insert one of your custom embed types into the text.
 
 For example, if it’s a node, you can have the full node or any one of the node displays. You can embed just about any kind of content into your text field using this module. For a good in depth guide on working with this module, [see this article](https://www.lullabot.com/articles/how-to-embed-just-about-anything-in-drupal-8-entity-embed-url-embed, ), which explains its use and related modules as well.
 
