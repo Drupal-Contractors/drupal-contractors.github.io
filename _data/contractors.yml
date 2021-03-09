@@ -53,6 +53,7 @@ architect:
   image: "/assets/img/contractors/architect.png"
   profiles:
     - josh-k
+    - will-k
     - mark-s
     - tai-t
     - tyler-a
@@ -268,13 +269,6 @@ sys_admin:
   title: "Hire your next star system administrator to scale your business."
   image: "/assets/img/contractors/sys_admin.png"
   profiles:
-    - boris-s
-    - will-k
-    - tyler-a
-    - george-p
-    - matt-o
-    - jon-p
-    - jamie-v
   description_image: "/assets/img/role-based-photos/sysadmin.jpg"
   description: |-
     System administrators safeguard your operating systems and business applications. They keep tabs on the reliability of one-to-many computer systems and maintain their integrity. As you look to hire a system administrator, look for someone with the following traits.
