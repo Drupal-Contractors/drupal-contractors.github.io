@@ -1,0 +1,40 @@
+- key: architect
+  value: Architects For Hire
+  description: Need an Architect? Drupal Contractors is your best source for pre-screened Drupal Architects.
+  image: /img/meta/architect.jpg
+- key: art_director
+  value: Art Directors For Hire
+  description: Need an Art Director? Drupal Contractors is your best source for pre-screened Drupal Art Directors.
+  image: /img/meta/art-director.jpg
+- key: backend
+  value: Back-end Developers For Hire
+  description: Need a Backend Developer? Drupal Contractors is your best source for pre-screened Drupal front-end Developers.
+  image: /img/meta/backend-developer.jpg
+- key: frontend
+  value: Front-end Developers For Hire
+  description: Need a front-end Developer? Drupal Contractors is your best source for pre-screened Drupal front-end Developers.
+  image: /img/meta/frontend-developer.jpg
+- key: full_stack
+  value: Full-Stack Developers For Hire
+  description: Need a Full-stack Developer? Drupal Contractors is your best source for pre-screened Drupal Full-stack Developers.
+  image: /img/meta/full-stack-developer.jpg
+- key: pm
+  value: Project Managers For Hire
+  description: Need a Project Manager? Drupal Contractors is your best source for pre-screened Drupal Project Managers.
+  image: /img/meta/pm.jpg
+- key: qa_tester
+  value: QA Testers For Hire
+  description: Need a QA Tester? Drupal Contractors is your best source for pre-screened Drupal QA Testers.
+  image: /img/meta/qa-tester.jpg
+- key: sys_admin
+  value: System Administrators For Hire
+  description: Need a Systems Administrator? Drupal Contractors is your best source for pre-screened Drupal Systems Administrators.
+  image: /img/meta/qa-tester.jpg
+- key: ux_designer
+  value: UX Designer For Hire
+  description: Need a UX Designer? Drupal Contractors is your best source for pre-screened Drupal UX Designers.
+  image: /img/meta/ux-designer.jpg
+- key: visual_designer
+  value: Visual Designer For Hire
+  description: Need a Visual Designer? Drupal Contractors is your best source for pre-screened Drupal Visual Designers.
+  image: /img/meta/visual-designer.jpg

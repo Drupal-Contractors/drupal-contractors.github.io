@@ -1,19 +1,132 @@
-title: Drupal Contractors - Find the Best Drupal Talent Fast!
+title: "Drupal Contractors"
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-url: ""
-signup_url: "https://app.drupalcontractors.com/contractors/register"
-support_email: "service@drupalcontractors.com"
+keywords: staffing, Drupal, drupal, Drupal freelancers, drupal freelancers, Drupal contractors, Drupal staffing
+vertical: Drupal
+community: "https://drupal.org/"
+coding_standards: "https://www.drupal.org/docs/develop/standards"
+url: "https://drupal-contractors.github.io"
+email: service@esteemed.io
+slack_signup_link: "https://join.slack.com/t/esteemed/shared_invite/zt-aejwraa8-mFs6ZUEs6voPD5RCV3vwvg"
+bot_link: /
+bio: drupal_bio
+experience: drupal_experience
+contractor_profiles_link: /get-a-quote/
+twitter: drupalcontract
+linkedin: drupal-contractors
+facebook: drupalcontractors
+google_analytics: UA-167435008-3
+logo:
+  white: /assets/img/dcont-logo-horiz-white.svg
+  black: /assets/img/dcont-logo-horiz-black.svg
+getting_started_img_1: /assets/img/contractor_1.png
+getting_started_img_2: /assets/img/jobs_0.png
+favicon: /assets/img/dcont-favicon.svg
+homepage_hero_img: /assets/img/dcont-polaroid.png
+
+collections:
+  skills:
+    output: true
+    permalink: /:collection/:name
 
 # Build settings
+remote_theme: "EsteemedIO/esteemed-theme@develop"
 markdown: kramdown
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-menus
+  - jekyll-paginate-v2
+  - jekyll-datapage-generator
+  - jekyll-redirect-from
+
+jekyll_get_json:
+  - data: profiles
+    json: '/mock/profiles.json'
+  - data: config
+    json: https://khfmg9m8l2.execute-api.us-east-1.amazonaws.com/prod/config
+
+author_dir: "blog/author"
+author_title_prefix: ""
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: "/:num/"
+  title: ":title - page :num"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+autopages:
+  enabled: true
+  title: ':cat Posts'
+  categories:
+    layouts:
+      - 'categories.html'
+    permalink: "/blog/category/:cat/"
+  collections:
+    enabled: false
+  tags:
+    enabled: false
+
+page_gen-dirs: true
+page_gen:
+  - data: "profiles"
+    template: "contractor"
+    name: "id"
+    dir: "profile"
+  - data: "titles"
+    template: "contractors"
+    name: "key"
+    dir: "contractors"
+  - data: "config.skills"
+    template: "contractors"
+    name: "key"
+    dir: "skills"
+    title_expr: + "Browse Top-Rated Talent in " + record['value']
+    description: record['description']
+
+collections:
+  categories:
+    title: Categories
+    output: true
+
 defaults:
   -
     scope:
       path: ""
     values:
       layout: "default"
+      image: /img/meta/main.jpg
+      contact_form: true
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:year/:month/:day/:title/
+  -
+    scope:
+      path: ''
+      type: authors
+    values:
+      permalink: "/blog/author/:title/"
+      layout: authors
+      image: /img/profile-pic.png
+      sitemap: false
+  -
+    scope:
+      path: ''
+      type: categories
+    values:
+      permalink: "/blog/category/:title/"
+      layout: categories
+      sitemap: false
+sass:
+  load_paths:
+    - _sass
+    - node_modules
 exclude:
-  - .jekyll-cache
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - vendor
