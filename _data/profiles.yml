@@ -75,7 +75,7 @@
     - Command_line
     - continuous-delivery
     - continuous-integration
-    - CSS_—_Sass
+    - CSS/SASS
     - Custom_JS
     - Deployments
     - Drupal8
@@ -277,7 +277,7 @@
     - Architecture
     - Drupal_8
     - Continuous_Integration
-    - CSS_—_Sass
+    - CSS/SASS
     - Custom_module_development
     - Deployments
     - Integration
@@ -310,7 +310,7 @@
   skills:
     - Adobe_Creative_Suite
     - Command_line
-    - CSS_—_Sass
+    - CSS/SASS
     - Custom_JS
     - Debian
     - Drupal_Tools
@@ -791,7 +791,7 @@
     - sys_admin
     - architect
   skills:
-    - CSS_—_Sass
+    - CSS/SASS
     - Adobe_illustrator
     - Adobe_photoshop
     - Adobe_XD
@@ -978,7 +978,7 @@
   skills:
     - HTML5
     - CSS3
-    - Sass
+    - SASS
     - SCSS
     - JavaScript
     - ReactJS
@@ -1119,7 +1119,7 @@
 - id: "joe-h"
   name: "Joe H."
   image: "/assets/img/profiles/joe-hair.jpg"
-  location: "Dallas-Fort Worth Metroplex, TX"
+  location: "Dallas, TX"
   availability: "hours_40"
   english: proficient
   titles:
