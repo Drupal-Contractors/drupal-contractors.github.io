@@ -15,6 +15,7 @@ twitter: drupalcontract
 linkedin: drupal-contractors
 facebook: drupalcontractors
 google_analytics: UA-167435008-3
+recaptcha_api_key: 6LcC3KAhAAAAAMSRHTEA2IdzlbNBRGiWBoGprcfc
 logo:
   white: /assets/img/dcont-logo-horiz-white.svg
   black: /assets/img/dcont-logo-horiz-black.svg
