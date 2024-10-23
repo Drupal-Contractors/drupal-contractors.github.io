@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167435008-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167435008-3');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/assets/img/dcont-favicon.svg" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A place where community members can network and help one another" />
+  <meta name="keywords" content="staffing, Drupal, drupal, Drupal freelancers, drupal freelancers, Drupal contractors, Drupal staffing" />
+  <meta name="rating" content="general" />
+  <meta name="rights" content="Copyright Drupal Contractors an Esteemed Inc. business - 2019 / 2020" />
+  <link rel="canonical" href="https://drupal-contractors.github.io/blog/2020/11/09/sending-emails-using-oop-dependency-injection-drupal/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Drupal Contractors" />
+  <meta property="og:url" content="https://drupal-contractors.github.io" />
+  <meta property="og:title" content="Sending Emails Using OOP and Dependency Injection in Drupal 8, 9 | Drupal Contractors" />
+  <meta property="og:description" content="A place where community members can network and help one another" />
+  <meta property="og:image" content="https://drupal-contractors.github.io/img/oop-email.png" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:country_name" content="United States" />
+  <meta property="og:email" content="services@esteemed.io" />
+  <meta property="og:phone_number" content="360.701.7353" />
+  <meta property="og:region" content="Northwest" />
+  <meta property="og:locality" content="Seattle" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:site" content="@drupalcontract" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://drupal-contractors.github.io" />
+  <meta name="twitter:title" content="Sending Emails Using OOP and Dependency Injection in Drupal 8, 9 | Drupal Contractors" />
+  <meta name="twitter:image" content="https://drupal-contractors.github.io/img/oop-email.png" />
+  <meta name="twitter:image:alt" content="Drupal Contractors" />
+  <meta name="dcterms.title" content="Sending Emails Using OOP and Dependency Injection in Drupal 8, 9 | Drupal Contractors" />
+  <meta name="dcterms.type" content="Text" />
+  <meta name="dcterms.identifier" content="https://drupal-contractors.github.io/blog/2020/11/09/sending-emails-using-oop-dependency-injection-drupal/" />
+  <meta name="dcterms.format" content="text/html" />
+  <title>Sending Emails Using OOP and Dependency Injection in Drupal 8, 9 | Drupal Contractors</title>
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" media="all" />
+  <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="/assets/css/style.css" media="all" />
+</head>
+
+
+
+
+<body class="html no-sidebars i18n-en panel-layout-onecol panel-region-middle">
+  
+<a id="skip-link" href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+<header id="headers-wrapper">
+  <div id="header-esteemed" class="global-header" role="header">
+    <div class="container">
+      <div class="global-header-body">
+        <div class="siteHeader-body-left">
+            <div class="logo">
+                <a href="https://esteemed.io" title="Esteemed">
+                  <img typeof="foaf:Image" src="/assets/img/esteemed-bw-logo.svg" alt="Esteeemd IO" title="Esteemed" />
+                </a>
+            </div>
+        </div>
+        <div class="global-header-body-right">
+          <div class="region region-navigation-right">
+            <div class="global-header-body-right-link global-header-body-right-link--account">
+                <div class="right-button"><a href="http://esteemed.slack.com/">Log In</a></div>
+            </div>
+            <div class="global-header-body-right-link global-header-body-right-link--btn">
+                <div class="right-two-button"><a href="https://join.slack.com/t/esteemed/shared_invite/zt-aejwraa8-mFs6ZUEs6voPD5RCV3vwvg" target="_blank">Join Colleagues</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-buttons display-buttons">
+      <button type="button" class="hamburger-top" data-toggle="collapse" data-target="#menu-global"><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
+      <div id="menu-global" class="collapse">
+        <div class="right-button"><a  href="http://esteemed.slack.com/">Log In</a></div>
+        <div class="right-two-button"><a href="https://join.slack.com/t/esteemed/shared_invite/zt-aejwraa8-mFs6ZUEs6voPD5RCV3vwvg">Join Colleagues</a></div>
+      </div>
+    </div>
+  </div>
+  <div id="header" class="siteHeader" role="header">
+    <nav id="js-bootstrap-offcanvas" class="navbar navbar-expand-xl navbar-offcanvas-right navbar-offcanvas-touch">
+      <div class="container">
+        <a class="navbar-brand" href="/" title="Drupal Contractors">
+          <img typeof="foaf:Image" src="/assets/img/dcont-logo-horiz-white.svg" alt="Drupal Contractors" title="Drupal Contractors" class="align-top white-logo"/>
+          <img typeof="foaf:Image" src="/assets/img/dcont-logo-horiz-black.svg" alt="Drupal Contractors" title="Drupal Contractors" class="align-top black-logo"/>
+        </a>
+        <button class="navbar-toggler js-hamburger offcanvas-toggle" type="button" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse mainMenu">
+          <button class="mobileMenu-close js-closeMobileMenu d-block d-lg-none"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="nav-item nav-item-second">
+                  <a class="nav-link" href="https://talent.esteemed.io/jobs" target="_blank">Browse Jobs</a>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle dropdown-item-first" href="#">Browse Contractors<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    
+                    
+                    <li><a href="/contractors/architect/" title="Architect">Architect</a></li>
+                    
+                    
+                    <li><a href="/contractors/art_director/" title="Art Director">Art Director</a></li>
+                    
+                    
+                    <li><a href="/contractors/backend/" title="Back-end Developer">Back-end Developer</a></li>
+                    
+                    
+                    <li><a href="/contractors/frontend/" title="Front-end Developer">Front-end Developer</a></li>
+                    
+                    
+                    <li><a href="/contractors/full_stack/" title="Full-Stack Developer">Full-Stack Developer</a></li>
+                    
+                    
+                    <li><a href="/contractors/pm/" title="Project Manager">Project Manager</a></li>
+                    
+                    
+                    <li><a href="/contractors/qa_tester/" title="QA Tester">QA Tester</a></li>
+                    
+                    
+                      
+                    
+                    <li><a href="/contractors/ux_designer/" title="UX Designer">UX Designer</a></li>
+                    
+                    
+                    <li><a href="/contractors/visual_designer/" title="Visual Designer">Visual Designer</a></li>
+                    
+                    <li><a href="/contractors/">See All</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a href="/#how-it-works" class="nav-link">How it works</a>
+            </li>
+          </ul>
+          <div class="region region-navigation-right">
+            
+            <div class="block block-block siteHeader-body-right-link siteHeader-body-right-link--account block--">
+              <div class="block__content">
+                <div class="sign_up-button"><a href="/getting-started/"><span class="mbri-edit"></span> Sign Up</a></div>
+              </div>
+            </div>
+            
+            <div class="block block-block siteHeader-body-right-link siteHeader-body-right-link--btn block--">
+              <div class="block__content">
+                <div><a class="btn btn--blue" href="https://colleagues.esteemed.io/opportunities">Become a Contractor</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrapper">
+    <div id="main" class="main">
+      <div id="content">
+        <div class="region region-content">
+          
+
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="/blog/">Blog</a>
+
+    
+  </div>
+
+  <div class="row justify-content-center px-3 px-md-4 px-lg-5">
+    <div class="col-md-10 col-lg-8">
+      <div class="blog-post">
+        <h1 class="blog-post__title">Sending Emails Using OOP and Dependency Injection in Drupal 8, 9</h1>
+
+        <div class="block-post__meta text-center pb-blog">
+          <div class="blog-post__author font-italic">
+            By <span class="font-weight-bold"><a href="/blog/author/alex-novak/">Alex Novak</a></span>
+          </div>
+
+          <div class="blog-post__date">
+            11.9.2020
+          </div>
+        </div>
+
+        
+          <div class="blog-post__image pb-blog">
+            <img src="/img/oop-email.png" alt="Header Image">
+          </div>
+        
+
+        <div class="blog-post__content">
+          <p>In Drupal, until now, the formation of an email is done using the <code class="language-plaintext highlighter-rouge">hook_mail()</code> hook. If you need to form more than one email, then the function grows by leaps and bounds, or provokes to write spaghetti. Often, the problem is complicated by the fact that emails can be complex, require data or services for some kind of logic, which makes the code even more difficult to maintain.</p>
+
+<p>Until this hook is replaced with something more modern, we can do it ourselves! Fortunately, it’s not that difficult.</p>
+
+<p>We do not need to invent anything. The Drupal Commerce 2 developers have already come up with everything for us. In this article, you will not only learn how they send emails, but how you can also apply their approach to your projects.</p>
+
+<p>Some advantages include:</p>
+
+<ul>
+  <li>Set standard parameter values for emails.</li>
+  <li>Send render arrays as the content of the email.</li>
+  <li>Use Dependency Injection and Services correctly.</li>
+  <li>Break emails their own object, making it easier to form emails with more complex logic by methods and DI (Dependency Injection).</li>
+  <li>Better organize your code in your project.</li>
+  <li>Send emails in different languages, regardless of the original.</li>
+</ul>
+
+<p>Further we will write and analyze an analogue of what is in Drupal Commerce 2. If you compare them, they will be slightly different, but the principle and approach will be absolutely identical.</p>
+
+<h3 id="mailhandler---generating-and-sending-emails">MailHandler - Generating and Sending Emails</h3>
+
+<p>The @Mail plugins are responsible for sending emails to Drupal, and they are managed by the plugin.manager.mail manager. In principle, this service is sufficient for sending mail, but most likely you will not want to send emails with standard parameters. In order not to pass the same parameters every time, this mediator is introduced - MailHandler.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src/Mail/MailHandler.php
+
+&lt;?php
+
+namespace Drupal\example\Mail;
+
+use Drupal\Core\Language\LanguageDefault;
+use Drupal\Core\Language\LanguageManagerInterface;
+use Drupal\Core\Mail\MailManagerInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\StringTranslation\TranslationInterface;
+use Drupal\Core\StringTranslation\TranslationManager;
+
+/**
+ * Handles the assembly and dispatch of HTML emails.
+ */
+final class MailHandler {
+
+  /**
+  * The mail manager.
+  *
+  * @var \Drupal\Core\Mail\MailManagerInterface
+  */
+  protected $mailManager;
+
+  /**
+   * The language manager.
+   *
+   * @var \Drupal\Core\Language\LanguageManagerInterface
+   */
+  protected $languageManager;
+
+  /**
+   * The language default.
+   *
+   * @var \Drupal\Core\Language\LanguageDefault
+   */
+  protected $languageDefault;
+
+  /**
+   * The string translation service.
+   *
+   * @var \Drupal\Core\StringTranslation\TranslationInterface
+   */
+  private $stringTranslation;
+
+  /**
+   * Constructs a new MailHandler object.
+   *
+   * @param \Drupal\Core\Mail\MailManagerInterface $mail_manager
+   *   The mail manager.
+   * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
+   *   The language manager.
+   * @param \Drupal\Core\Language\LanguageDefault $language_default
+   *   The language default.
+   * @param \Drupal\Core\StringTranslation\TranslationInterface $string_translation
+   *   The string translation service.
+   */
+  public function __construct(MailManagerInterface $mail_manager,
+    LanguageManagerInterface $language_manager, LanguageDefault
+    $language_default, TranslationInterface $string_translation) {
+    $this-&gt;mailManager = $mail_manager;
+    $this-&gt;languageManager = $language_manager;
+    $this-&gt;languageDefault = $language_default;
+    $this-&gt;stringTranslation = $string_translation;
+  }
+
+  /**
+    * Composes and send email message.
+    *
+    * @param string $to
+    *   The email address or addresses where the message will be sent to.
+    * @param TranslatableMarkup $subject
+    *   The message subject. To be properly translated with body, it must be
+    *   TranslatableMarkup when we switch language.
+    * @param array $body
+    * @param array $params
+    *   Parameters to build the email.
+    *
+    * @return bool
+    *   TRUE if the email was sent successfully, FALSE otherwise.
+    *
+    * @see \Drupal\Core\Mail\MailManagerInterface::mail()
+    */
+  public function sendMail(string $to, TranslatableMarkup $subject, array $body, array $params = []): bool {
+    $default_params = ['headers' =&gt; [
+        'Content-Type' =&gt; 'text/html; charset=UTF-8;',
+        'Content-Transfer-Encoding' =&gt; '8Bit',
+      ],
+      'id' =&gt; 'mail',
+      'reply-to' =&gt; NULL,
+      'subject' =&gt; $subject,
+      'langcode' =&gt; $this-&gt;languageManager-&gt;getCurrentLanguage()-&gt;getId(),
+      // The body will be rendered in example_mail().
+      'body' =&gt; $body,
+    ];
+
+    if (!empty($params['cc'])) {
+      $default_params['headers']['Cc'] = $params['cc'];
+    }
+
+    if (!empty($params['bcc'])) {
+      $default_params['headers']['Bcc'] = $params['bcc'];
+    }
+
+    $params = array_replace($default_params, $params);
+
+    // Change the active language to ensure the email is properly translated.
+    if ($params['langcode'] != $default_params['langcode']) {
+      $this-&gt;changeActiveLanguage($params['langcode']);
+    }
+
+    $message = $this-&gt;mailManager-&gt;mail('example', $params['id'], $to, $params['langcode'], $params, $params['reply-to']);
+
+    // Revert back to the original active language.
+    if ($params['langcode'] != $default_params['langcode']) {
+      $this-&gt;changeActiveLanguage($default_params['langcode']);
+    }
+
+    return (bool) $message['result'];
+  }
+
+  /**
+   * Changes the active language for translations.
+   *
+   * @param string $langcode
+   *   The langcode.
+   */
+  protected function changeActiveLanguage($langcode): void {
+    if (!$this-&gt;languageManager-&gt;isMultilingual()) {
+      return;
+    }
+
+    $language = $this-&gt;languageManager-&gt;getLanguage($langcode);
+
+    if (!$language) {
+      return;
+    }
+
+    // The language manager has no method for overriding the default
+    // language, like it does for config overrides. We have to change the
+    // default language service's current language.
+    // @see https://www.drupal.org/project/drupal/issues/3029010
+    $this-&gt;languageDefault-&gt;set($language);
+    $this-&gt;languageManager-&gt;setConfigOverrideLanguage($language);
+    $this-&gt;languageManager-&gt;reset();
+
+    // The default string_translation service, TranslationManager, has a
+    // setDefaultLangcode method. However, this method is not present on
+    // either of its interfaces. Therefore we check for the concrete class
+    // here so that any swapped service does not break the application.
+    // @see https://www.drupal.org/project/drupal/issues/3029003
+    if ($this-&gt;stringTranslation instanceof TranslationManager) {
+      $this-&gt;stringTranslation-&gt;setDefaultLangcode($language-&gt;getId());
+      $this-&gt;stringTranslation-&gt;reset();
+    }
+  }
+}
+</code></pre></div></div>
+
+<h3 id="constructor---dependency-injection">Constructor - Dependency Injection</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * Constructs a new MailHandler object.
+ *
+ * @param \Drupal\Core\Mail\MailManagerInterface $mail_manager
+ *   The mail manager.
+ * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
+ *   The language manager.
+ * @param \Drupal\Core\Language\LanguageDefault $language_default
+ *  The language default.
+ * @param \Drupal\Core\StringTranslation\TranslationInterface $string_translation
+ *   The string translation service.
+ */
+public function __construct(MailManagerInterface $mail_manager, LanguageManagerInterface $language_manager, LanguageDefault $language_default, TranslationInterface $string_translation) {
+  $this-&gt;mailManager = $mail_manager;
+  $this-&gt;languageManager = $language_manager;
+  $this-&gt;languageDefault = $language_default;
+  $this-&gt;stringTranslation = $string_translation;
+}
+</code></pre></div></div>
+
+<p>Dependency Injection of four services is performed in the handler:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">plugin.manager.mail</code>: @Mail plugin manager - which are responsible for sending emails. Through the plugin data manager, we will make a request to send a email, and then he will go about his business - select a plugin and send it.</li>
+  <li><code class="language-plaintext highlighter-rouge">language_manager</code>: System language manager. Allows us to receive all the necessary information about languages.</li>
+  <li><code class="language-plaintext highlighter-rouge">language.default</code>: Repository of information about the current language.</li>
+  <li><code class="language-plaintext highlighter-rouge">string_translation</code>: Translation manager. Responsible for how the strings will be translated and their direct translation.</li>
+</ul>
+
+<h3 id="change-language-for-sending-an-email--changeactivelanguage">Change Language for Sending an Email — <code class="language-plaintext highlighter-rouge">::changeActiveLanguage()</code></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * Changes the active language for translations.
+ *
+ * @param string $langcode
+ *   The langcode.
+ */
+protected function changeActiveLanguage($langcode): void {
+  if (!$this-&gt;languageManager-&gt;isMultilingual()) {
+    return;
+  }
+
+  $language = $this-&gt;languageManager-&gt;getLanguage($langcode);
+
+  if (!$language) {
+    return;
+  }
+
+  // The language manager has no method for overriding the default
+  // language, like it does for config overrides. We have to change the
+  // default language service's current language.
+  // @see https://www.drupal.org/project/drupal/issues/3029010
+  $this-&gt;languageDefault-&gt;set($language);
+  $this-&gt;languageManager-&gt;setConfigOverrideLanguage($language);
+  $this-&gt;languageManager-&gt;reset();
+
+  // The default string_translation service, TranslationManager, has a
+  // setDefaultLangcode method. However, this method is not present on
+  // either of its interfaces. Therefore we check for the concrete class
+  // here so that any swapped service does not break the application.
+  // @see https://www.drupal.org/project/drupal/issues/3029003
+  if ($this-&gt;stringTranslation instanceof TranslationManager) {
+    $this-&gt;stringTranslation-&gt;setDefaultLangcode($language-&gt;getId());
+    $this-&gt;stringTranslation-&gt;reset();
+  }
+}
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">:changeActiveLanguage()</code> method is responsible for changing the current language at the time the request is executed.</p>
+
+<p>First of all, it checks if the site is multilingual (has two or more languages). If not, it immediately exits. If the site is multilingual, it receives information about the language to which you want to switch the system. If there is no information about the language, the process is aborted. Further, if both conditions are satisfied, the process of switching the language to the one passed in the parameter occurs.</p>
+
+<p>For this, information about the language is set in language.default and resets the current internal cache, then the same operation is performed for string_translation so that it understands whether it needs to be translated and into which language. This method is copy-paste from a commercial. In fact, this is a “crutch” for switching the current system language, since the kernel does not provide such an API that would comprehensively perform this. In the comments, links to issues are provided, if you are interested in this, you can “kick” and add such an API to the core. For example this allows you to send a email to a user in one language, calling it in another: A manager with an English interface will cause a email to be sent for a user with the selected Spanish language.</p>
+
+<h3 id="sending-email--sendmail">Sending Email — <code class="language-plaintext highlighter-rouge">::sendMail()</code></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * Composes and send email message.
+ * @param string $to
+ *   The email address or addresses where the message will be sent to.
+ * @param TranslatableMarkup $subject
+ *   The message subject. To be properly translated with body, it must be
+ *   TranslatableMarkup when we switch language.
+ * @param array $body
+ *   A render array representing message body.
+ * @param array $params
+ *   Parameters to build the email.
+ *
+ * @return bool
+ *   TRUE if the email was sent successfully, FALSE otherwise.
+ *
+ * @see \Drupal\Core\Mail\MailManagerInterface::mail()
+ */
+public function sendMail(string $to, TranslatableMarkup $subject, array $body, array $params = []): bool {
+  $default_params = [
+    'headers' =&gt; [
+      'Content-Type' =&gt; 'text/html; charset=UTF-8;',
+      'Content-Transfer-Encoding' =&gt; '8Bit',
+    ],
+    'id' =&gt; 'mail',
+    'reply-to' =&gt; NULL,
+    'subject' =&gt; $subject,
+    'langcode' =&gt; $this-&gt;languageManager-&gt;getCurrentLanguage()-&gt;getId(),
+    // The body will be rendered in example_mail().
+    'body' =&gt; $body,
+  ];
+
+  if (!empty($params['cc'])) {
+    $default_params['headers']['Cc'] = $params['cc'];
+  }
+
+  if (!empty($params['bcc'])) {
+    $default_params['headers']['Bcc'] = $params['bcc'];
+  }
+
+  $params = array_replace($default_params, $params);
+
+  // Change the active language to ensure the email is properly translated.
+  if ($params['langcode'] != $default_params['langcode']) {
+    $this-&gt;changeActiveLanguage($params['langcode']);
+  }
+
+  $message = $this-&gt;mailManager-&gt;mail('example', $params['id'], $to, $params['langcode'], $params, $params['reply-to']);
+
+  // Revert back to the original active language.
+  if ($params['langcode'] != $default_params['langcode']) {
+    $this-&gt;changeActiveLanguage($default_params['langcode']);
+  }
+
+  return (bool) $message['result'];
+}
+</code></pre></div></div>
+
+<p>This method prepares the email for sending, sets the default values and sends them using <code class="language-plaintext highlighter-rouge">plugin.manager.mail</code>.</p>
+
+<p>It takes as arguments:</p>
+
+<ul>
+  <li>string $to: Email address where the email should be sent.</li>
+  <li><code class="language-plaintext highlighter-rouge">TranslatableMarkup $subject</code>: The subject of the email. This argument differs from the commercial implementation. I deliberately made the TranslatableMarkup type so that the title does not come immediately in the line like in Drupal Commerce. If you pass a string here, it will not be translated!</li>
+  <li><code class="language-plaintext highlighter-rouge">array $body</code>: Render an array with the body of the email. We will send emails through render arrays. This opens up many possibilities, for example, forming a email via <code class="language-plaintext highlighter-rouge">hook_theme()</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">array $params</code>: An array of parameters for the email, just like in normal sending. In our case, it will also be used to be able to change the default parameters.</li>
+</ul>
+
+<p>As a result, it returns a boolean value about the message sending status.</p>
+
+<p>Inside the method, the first thing to do is set the default parameters:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">headers</code>: By default, all emails will be sent as HTML. In order for this to work correctly, you need some kind of module that can send HTML, for example, swiftmailer (it will be like an example dependency). If you don’t want to send HTML emails, remove the Content-Type.</li>
+  <li><code class="language-plaintext highlighter-rouge">id</code>: Key of the email. This value will come in the $key parameter of the hook_mail() hook. We set the default value to mail. You can override this value to alter emails or for other purposes.</li>
+  <li><code class="language-plaintext highlighter-rouge">reply-to</code>: The e-mail that will be indicated for the reply in the email. By default, we set NULL, since we will pass this parameter as an argument when sending. If you don’t override this value when submitting, Drupal will substitute the default site email address.</li>
+  <li><code class="language-plaintext highlighter-rouge">subject</code>: The subject of the email, taken from the argument.</li>
+  <li><code class="language-plaintext highlighter-rouge">langcode</code>: Current system language code. It is necessary to send a email, but it is not used in any way out of the box, so we have our own method for switching the language.</li>
+  <li><code class="language-plaintext highlighter-rouge">body</code>: The body of the email is a render array.</li>
+</ul>
+
+<p>All of these options will be available in <code class="language-plaintext highlighter-rouge">hook_mail()</code>. If you need any additional information when altering emails, you can safely add it to this array.</p>
+
+<p>Next, it is checked whether the value is passed in the additional parameters cc. If passed, the correct email header is set. Cc - email address where a copy of the email will be sent.</p>
+
+<p>The same is done with bcc. Bcc - email address where a copy of the email will be sent, but the addressee (<code class="language-plaintext highlighter-rouge">$to</code>) will not be able to see it.</p>
+
+<p>Next, the values of <code class="language-plaintext highlighter-rouge">$default_params</code> are concatenated with additional values from <code class="language-plaintext highlighter-rouge">$params</code> and stored in <code class="language-plaintext highlighter-rouge">$params</code>. $default_params remains unchanged.</p>
+
+<p>Then the language is checked from $params and <code class="language-plaintext highlighter-rouge">$default_params</code>. If they differ (in $params when sending a language different from the currently active one), then the system language is switched to the language from $params using the <code class="language-plaintext highlighter-rouge">::hangeActiveLanguage()</code> method.</p>
+
+<p>After the system language is switched, the message is sent using <code class="language-plaintext highlighter-rouge">plugin.manager.mail</code>.</p>
+
+<p>As soon as the sending process is completed, the system language switches back to what it was before the email was sent, so that all subsequent operations do not end up in the incorrect language.</p>
+
+<p>At the end, the message sending status received from <code class="language-plaintext highlighter-rouge">plugin.manager.mail</code> is returned.</p>
+
+<h3 id="service-examplemail_handler">Service example.mail_handler</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>services:
+  example.mail_handler:
+    class: Drupal\example\Mail\MailHandler
+    arguments: ['@plugin.manager.mail', '@language_manager', '@language.default', '@string_translation']
+</code></pre></div></div>
+
+<p>We just have to declare our class as a service with all the required services as arguments.</p>
+
+<h2 id="hook_mail"><code class="language-plaintext highlighter-rouge">hook_mail()</code></h2>
+
+<p>We have declared our service example.mail_handler for sending emails in HTML via render arrays and with support for language switching. Almost everything is ready, we just need to implement <code class="language-plaintext highlighter-rouge">hook_mail()</code>.</p>
+
+<p>We still need a hook, it must form a message ($message) to send.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * Implements hook_mail().
+ *
+ * @see \Drupal\example\Mail\MailHandler
+ */
+function example_mail(string $key, array &amp;$message, array $params): void {
+  /** @var \Drupal\Core\Render\RendererInterface $renderer */
+  $renderer = \Drupal::service('renderer');
+
+  if (isset($params['headers'])) {
+    $message['headers'] = array_merge($message['headers'], $params['headers']);
+  }
+
+  if (!empty($params['from'])) {
+    $message['from'] = $params['from'];
+  }
+
+  $message['subject'] = $params['subject'];
+  $message['body'][] = $renderer-&gt;renderPlain($params['body']);
+}
+</code></pre></div></div>
+
+<p>Since all the main logic has been transferred to our service, we only form the final <code class="language-plaintext highlighter-rouge">$message</code>:</p>
+
+<ul>
+  <li>We pass the resulting headers.</li>
+  <li>Set from whom the email (if specified).</li>
+  <li>We indicate the title of the email.</li>
+  <li>We render the render array into HTML string and set it as the body of the email.</li>
+</ul>
+
+<p>We don’t need anything else. This is a fully functional service for sending emails.</p>
+
+<h2 id="how-to-use">How to Use</h2>
+
+<p>With this service, you can now send HTML emails very simply:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$subject = new TranslatableMarkup('My first mail!');
+$body = [
+  '#markup' =&gt; '&lt;strong&gt;Hello World!&lt;/strong&gt;',
+];
+$mail_handler-&gt;sendMail('example@example.com', $subject, $body);
+</code></pre></div></div>
+
+<h2 id="a-simple-example">A Simple Example</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+namespace Drupal\example\Mail;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Simple email message class.
+ */
+final class SimpleMail {
+
+  /**
+   * The mail handler.
+   *
+   * @var \Drupal\example\Mail\MailHandler
+   */
+  protected $mailHandler;
+
+  /**
+   * Constructs a new UserLoginEmail object.
+   *
+   * @param \Drupal\example\Mail\MailHandler $mail_handler
+   *   The mail handler.
+   */
+  public function __construct(MailHandler $mail_handler) {
+    $this-&gt;mailHandler = $mail_handler;
+  }
+
+  /**
+   * Sends email.
+   *
+   * @return bool
+   *   The message status.
+   */
+  public function send(): bool {
+    $subject = new TranslatableMarkup('My first mail!');
+    $body = [
+      '#markup' =&gt; '&lt;strong&gt;Hello World!&lt;/strong&gt;',
+    ];
+
+    return $this-&gt;mailHandler-&gt;sendMail('example@example.com', $subject, $body);
+  }
+}
+</code></pre></div></div>
+
+<p>This is the minimum that is needed to form a email as a service. It will need our <code class="language-plaintext highlighter-rouge">example.mail_handler</code> service and some method to send the email.</p>
+
+<p>You can create interfaces and develop the idea further in order to standardize specific emails.</p>
+
+<h2 id="outcome">Outcome</h2>
+
+<p>Since we have simplified <code class="language-plaintext highlighter-rouge">hook_mail()</code> and expect that emails will go through our service, and it, in turn, expects render arrays, we need to somehow form these emails.</p>
+
+<p>Email is a service. This means it is an object and it has support for Dependency Injection. And it’s extremely convenient!</p>
+
+<p>This has significant advantages:</p>
+
+<ul>
+  <li>You can make abstract objects for emails or basic ones, extend them, improve them. In general, apply OOP to the fullest, so that the code becomes less in the end!</li>
+  <li>You can easily find the objects responsible for the emails.</li>
+  <li>Different emails are not mixed in one file. In general, the file for the email is easier to find than the function in the sheet of code.</li>
+  <li>Dependency Injection allows you to correctly and conveniently connect all the required dependencies and use them to form an email.</li>
+  <li>Complex emails can be broken down into methods - emails will be easier to edit in the future. Less spaghetti.</li>
+  <li>It’s easier to implement similar emails with minimal differences.</li>
+  <li>Deleting such emails, again, is easier - since everything is in one file, and all dependencies are clearly traced through DI.</li>
+  <li>It is easy to find where a specific email is sent, again, due to DI.</li>
+</ul>
+
+<p>And this is just what I encountered in real practice, having switched to this option for sending emails from custom modules.</p>
+
+        </div>
+
+        <div class="post-categories pt-blog">
+          <span class="post-categories--title">Category: </span>
+
+          
+        </div>
+
+        <div class="blog-post__author-block pt-blog pb-blog row">
+          <div class="col-12 hr pb-blog"></div>
+          <div class="col-md-4 col-lg-3">
+            <div class="blog-post__author-block--image">
+              <a href="/blog/author/alex-novak/">
+                <img class="rounded-circle" src="/img/alex-novak.jpg" alt="Alex Novak">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-lg-9">
+            <div class="blog-post__author-block--name">
+              <a href="/blog/author/alex-novak/">Alex Novak</a>
+            </div>
+            <div class="blog-post__author-block--bio">
+              <p>Alex Novak is a WordPress/Drupal developer and blogger for WP Contractors. He has been a part of Drupal Contractors, WP Contractors, and Esteemed for over 4 years. As a developer, he has participated in extensive projects of varying complexity and scale. Most recently, he has been using React and Angular as well. Connect with him on WP Contractors!</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div id="contact-form" class="contact-form">
+  <section class="container">
+    <h2 class="contact-form__header">Do you need Drupal contractors to meet demand?</h2>
+    <p class="contact-form__description">Hire pre-screened, expert Drupal contractors. Our platform is part of the Esteemed Colleagues Community. We provide world-class Drupal talent that brands can trust — through tools they already use. We work as an extension of our clients in close collaboration to provide vetted architects, developers, designers and digital professionals.<br><br>If you need help hiring for digital, or to scale up to meet demand, please let us know. We'll be happy to get you started with a custom Esteemed subscription plan..</p>
+    <div class="contact-form__wrapper">
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+      <div id="mc_embed_signup" class="mc_form">
+        <form action="https://esteemed.us10.list-manage.com/subscribe/post?u=ec5b82da5b213df9999d28215&amp;id=a6b16fcb11" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group size1of2">
+              <label for="mce-FNAME">First Name </label>
+              <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group size1of2">
+              <label for="mce-LNAME">Last Name </label>
+              <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            </div>
+            <div class="mc-field-group size1of2">
+              <label for="mce-EMAIL">Email<span class="mce-required">*</span></label>
+              <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL"  required="" aria-required="true">
+            </div>
+            <div class="mc-field-group size1of2">
+              <label for="mce-MMERGE5">Website URL</label>
+              <input type="text" value="" name="MMERGE5" class=" url" id="mce-MMERGE5">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-PHONE">Phone Number </label>
+              <input type="text" name="PHONE" class="" value="" id="mce-PHONE">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-MMERGE7">I'm a <span class="mce-required">*</span></label>
+              <select name="MMERGE7" class="" id="mce-MMERGE7"  required="" aria-required="true">
+                <option value=""></option>
+                <option value="Contractor">Contractor</option>
+                <option value="Agency">Agency</option>
+                <option value="Brand">Brand</option>
+              </select>
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-MMERGE6">How would you best describe your Drupal staffing needs?</label>
+              <textarea type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6"></textarea>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec5b82da5b213df9999d28215_a6b16fcb11" tabindex="-1" value=""></div>
+            
+            <div class="submit"><input type="submit" value="Talk to us" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            
+          </div>
+        </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[6]='MMERGE7';ftypes[6]='option';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='url';fnames[7]='DESCRPTN';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+      <!--End mc_embed_signup-->
+    </div>
+  </section>
+</div>
+
+
+<div class="preFooter">
+  <div class="region region-pre-footer">
+    <div class="getStartBlocks">
+      <h6>Get Started</h6>
+      <div class="getStartBlocks-row">
+        <div class="getStartBlocks-row-btn">
+          <a class="btn btn--light" href="/get-a-quote/">Get a Quote</a>
+        </div>
+        <div class="getStartBlocks-row-btn">
+          <a class="btn btn--light" href="https://colleagues.esteemed.io/opportunities">Become a Drupal Contractor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="siteFooter" class="siteFooter">
+  <div class="container">
+    <div class="siteFooter-top">
+        <div class="region region-footer-top-left">
+          <div class="footerCopyBlock">
+            <div class="block__content">
+              <h2><strong><span>Drupal Contractors</span></strong> matches pre-screened <strong>Drupal</strong> talent with the needs of your business.</h2>
+            </div>
+          </div>
+        </div>
+      <div class="siteFooter-top-row siteFooter-top-row--right">
+        <div class="region region-footer-top-right">
+          <div class="footerSocials">
+            <div class="block__content">
+              <div class="footerSocials-copy">
+                <h5>Stay in touch</h5>
+              </div>
+              <div class="footerSocials-body">
+                <div class="footerSocials-body-link">
+                  <a href="https://twitter.com/drupalcontract" class="custom-icon custom-icon--twitter" target="_blank"></a>
+                </div>
+                <div class="footerSocials-body-link">
+                  <a href="https://www.linkedin.com/company/drupal-contractors/" class="custom-icon custom-icon--linkedin" target="_blank"></a>
+                </div>
+                <div class="footerSocials-body-link">
+                  <a href="https://www.facebook.com/drupalcontractors" class="custom-icon custom-icon--facebook" target="_blank"></a>
+                </div>
+                <div class="footerSocials-body-link">
+                  <a href="mailto:service@esteemed.io" class="custom-icon custom-icon--email"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="siteFooter-body">
+      <div class="siteFooter-body-column siteFooter-body-column--left">
+        <div class="region region-footer-left">
+          <div class="footerMenu">
+            <h4 class="block__title">About</h4>
+            <div class="block__content">
+              <ul class="menu nav-pills nav-stacked nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="/our-team/">Our Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="/our-history/">Our History</a></li>
+                <li class="nav-item"><a class="nav-link" href="tel:13607123866">1 (360) 712-3866</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="siteFooter-body-column siteFooter-body-column--center">
+        <div class="region region-footer-center">
+          <div class="footerMenu">
+            <h4 class="block__title">Services</h4>
+            <div class="block__content">
+              <ul class="menu nav-pills nav-stacked nav flex-column">
+                <li>
+                  <a href="/services/professional/">Drupal Contractors Professional</a>
+                </li>
+                <li>
+                  <a href="/services/enterprise/">Drupal Contractors Enterprise</a>
+                </li>
+                <li>
+                  <a class="external-link" href="https://esteemed.io/" target="_blank">Recruitment Solutions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="siteFooter-body-column siteFooter-body-column--right">
+        <div class="region region-footer-right">
+          <div class="footerMenu">
+            <h4 class="block__title">Resources</h4>
+            <div class="block__content">
+              <div class="menu-block-wrapper menu-block-4 menu-name-menu-footer-nav parent-mlid-512 menu-level-1">
+                <ul class="menu nav-pills nav-stacked nav flex-column">
+                  <li class="nav-item"><a class="nav-link" href="/blog/">Drupal Contractors Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/partner-us/">Partner with Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/faq/">Help & FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="siteFooter-body-column siteFooter-body-column--right-last">
+        <div class="region region-footer-right-last">
+          <div class="footerMenu">
+            <h4 class="block__title">Find</h4>
+            <div class="block__content">
+              <ul class="menu nav-pills nav-stacked nav flex-column">
+                <li>
+                  <a class="external-link" href="https://talent.esteemed.io/jobs" target="_blank">Contracting Opportunties</a>
+                </li>
+                <li>
+                  <a href="/contractors/">Contractors in the U.S.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footerMenu">
+            <h4 class="block__title">Community</h4>
+            <div class="block__content">
+              <ul class="menu nav-pills nav-stacked nav flex-column">
+                
+                <li>
+                  <a class="external-link" href="https://www.drupical.com" target="_blank">Regional Drupal Camps</a>
+                </li>
+                
+                <li>
+                  <a class="external-link" href="https://events.drupal.org/drupalcon" target="_blank">Drupal Conventions</a>
+                </li>
+                
+                <li>
+                  <a class="external-link" href="https://www.drupal.org/community/contributor-guide/contribution-areas" target="_blank">Contribute to Drupal</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="siteFooter-bottom">
+      <div class="region region-footer-bottom">
+        <div class="footerCopyright">
+          <div class="block__content">
+            <p>Copyright &copy; 2024 Drupal Contractors, an Esteemed Inc business. All right reserved. <a href="/terms-use/">Terms of Use</a> | <a href="/privacy/">Privacy Policy</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="/assets/js/scripts.js"></script>
+
+</body>
+</html>

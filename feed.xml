@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://drupal-contractors.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://drupal-contractors.github.io/" rel="alternate" type="text/html" /><updated>2024-10-23T22:40:30+00:00</updated><id>https://drupal-contractors.github.io/feed.xml</id><title type="html">Drupal Contractors</title><subtitle></subtitle><entry><title type="html">Understanding Your Drupal Module Must-Haves</title><link href="https://drupal-contractors.github.io/blog/2021/01/26/understanding-your-drupal-module-must-haves/" rel="alternate" type="text/html" title="Understanding Your Drupal Module Must-Haves" /><published>2021-01-26T15:59:21+00:00</published><updated>2021-01-26T15:59:21+00:00</updated><id>https://drupal-contractors.github.io/blog/2021/01/26/understanding-your-drupal-module-must-haves</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2021/01/26/understanding-your-drupal-module-must-haves/">&lt;p&gt;Pretend you’re a DIYer, getting ready to remodel your house.&lt;/p&gt;
+
+&lt;p&gt;You head over to your favorite home center for supplies to construct your walls, run some electrical wiring, and pick up some kitchen cabinets.&lt;/p&gt;
+
+&lt;p&gt;Imagine: instead of seeing all these items once you walk in, you find pine trees that you need to cut on your own, and copper nuggets that you’re expected to melt down and shape into wiring.&lt;/p&gt;
+
+&lt;p&gt;Sounds pretty ridiculous, doesn’t it?&lt;/p&gt;
+
+&lt;p&gt;Well, once upon a time home builders actually did cut down trees and mill their own lumber. But it all started somewhere, and now, we’re well past that.&lt;/p&gt;
+
+&lt;p&gt;We can draw a parallel between home-renovation and web development. In the past we were expected to build our own menu system, forms, user and login systems, all from scratch. Thankfully, Drupal comes with all of these out of the box.&lt;/p&gt;
+
+&lt;p&gt;There are lots of holes that need to be filled — luckily, there are some great add-on modules. Many serve the same or similar purpose, some compliment others. They fit into many categories. Often, it’s up to you to decide the best combination. Let’s take a look at some of our favorites below.&lt;/p&gt;
+
+&lt;h3 id=&quot;presentation-modules&quot;&gt;&lt;strong&gt;Presentation Modules&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Presentation modules are those that produce or alter pages or parts of pages. They reduce the amount of work needed to create complete sections of pages, such as lists of products, image galleries, slideshows, customized member rosters, or even pages containing one or more of these elements. Here are a few great tools to help you make a great presentation.&lt;/p&gt;
+
+&lt;h4 id=&quot;views&quot;&gt;Views&lt;/h4&gt;
+
+&lt;p&gt;Yes, Views, one of the most commonly used modules in the Drupal world, and it’s now in core. If you already know how much of a lifesaver it is, just move on. If not, add it to your project and start using it to present your content in pages and on blocks. Create reports, lists, even calendars with the addition of Views add-on modules, such as the &lt;a href=&quot;https://www.drupal.org/project/fullcalendar_view&quot; target=&quot;_blank&quot;&gt;Fullcalendar View module&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Need a quick overview of Views? Learn how to implement it via this training video by &lt;a href=&quot;https://www.youtube.com/watch?v=MHT_Q7GH7dw&quot; target=&quot;_blank&quot;&gt;WebWash&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To make Views even more powerful, here are a few of my favorite Views add-ons:&lt;/p&gt;
+
+&lt;h5 id=&quot;infinite-scroll&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/views_infinite_scroll&quot; target=&quot;_blank&quot;&gt;Infinite Scroll&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;Most users don’t like to click on the “Next” button to see more items in their search results. Instead, they prefer to scroll down the page to see more results. Both the Facebook posts display and Pinterest pins display are a great examples of the infinite scroll feature. Simply, add this functionality to your site with the Infinite Scroll module.&lt;/p&gt;
+
+&lt;h5 id=&quot;fullcalendar-view&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/fullcalendar_views&quot; target=&quot;_blank&quot;&gt;FullCalendar View&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;FullCalendar View provides an easy-to-implement, custom calendar creator that is both pleasing to work with and for your visitors to use.&lt;/p&gt;
+
+&lt;h5 id=&quot;views-view-field&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/views_field_view&quot; target=&quot;_blank&quot;&gt;Views View Field&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;Want to see a list inside each row of data? This is best achieved with a child view that reads in that data and is linked to a field in the current row. Use this module, because any other way is just too much work!&lt;/p&gt;
+
+&lt;h5 id=&quot;views-slideshow&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/views_slideshow&quot; target=&quot;_blank&quot;&gt;Views Slideshow&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;A long-time favorite module for custom slideshows, the Views Slideshow module will make creating slideshows from several different pieces of content a snap. Theming the resulting slideshow, however, can prove to be a daunting task!&lt;/p&gt;
+
+&lt;h5 id=&quot;views-accordion&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/views_accordion&quot; target=&quot;_blank&quot;&gt;Views Accordion&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;Know those simple lists that slide open to reveal a section with &lt;a href=&quot;https://help.content.samsung.com/csweb/faq/searchFaq.do&quot; target=&quot;_blank&quot;&gt;more info when you click on them&lt;/a&gt;? Create the same, powerful dropdown lists in Drupal with the Views Accordion module.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-views&quot;&gt;Benefits of Views&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Select, filter and display your content easily without code&lt;/li&gt;
+  &lt;li&gt;Create custom pages or blocks (to be placed on pages) with your selected content without code&lt;/li&gt;
+  &lt;li&gt;Add on all kinds of cool modules to enhance the capabilities of Views (you guessed it— &lt;em&gt;without code&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;layout-builder&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=E3p7UZ8hI-0&quot; target=&quot;_blank&quot;&gt;Layout Builder&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Layout Builder is a great core module, but it’s not enabled by default. Enabling this module also enables the Layout Discovery module as a dependency.&lt;/p&gt;
+
+&lt;p&gt;This module adds a “Manage Layout” button to a content type’s “Manage Display” tab. This displays a management screen that allows you to select a layout for the content type where users are able to drop in blocks.&lt;/p&gt;
+
+&lt;p&gt;You can customize the rows and columns in a similar fashion to the Panels module. Unlike the Panels module, however, the new layout applies to many content nodes, not just a single page.&lt;/p&gt;
+
+&lt;p&gt;Additionally, you can allow the user to customize each piece of content. This will provide them with a layout tab that allows them to customize the layout as of that node and insert blocks and other content in the sections they have created for that node.&lt;/p&gt;
+
+&lt;p&gt;Though this offers a lot of power to content editors, it can also result in an inconsistent site look and feel, so use this feature with caution.&lt;/p&gt;
+
+&lt;h4 id=&quot;related-modules&quot;&gt;Related Modules&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.drupal.org/project/layout_builder_restrictions&quot; target=&quot;_blank&quot;&gt;Layout Builder Restrictions&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Limit what the layout builder sees, reducing clutter&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.drupal.org/project/block_list_override&quot; target=&quot;_blank&quot;&gt;Block List Override&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Filters out less commonly used blocks from the layout builder list or which you don’t want users to be able to place on any page they create&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;benefits-of-layout-builder&quot;&gt;Benefits of Layout Builder&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Intuitive layout building&lt;/li&gt;
+  &lt;li&gt;Easy-to-add content to created layout&lt;/li&gt;
+  &lt;li&gt;Enforces consistency throughout content of similar type, or flexibility if you prefer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;paragraphs&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/paragraphs&quot; target=&quot;_blank&quot;&gt;Paragraphs&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Not to be confused with blocks of text, Paragraphs is a tool for building your own modular components, which are reusable collections of fields. This module works similarly to D7’s &lt;a href=&quot;https://www.drupal.org/project/field_collection&quot; target=&quot;_blank&quot;&gt;Field Collection&lt;/a&gt; module.&lt;/p&gt;
+
+&lt;p&gt;Users can add multiple fields to a Paragraph type, as well as add unlimited instances of a Paragraph to any content that has a reference field of that Paragraph type. The Paragraphs module has another major advantage over the Field Collection module. When you add a Field Collection field to a content type, its definition is a single group of field types (e.g.: a text field or two, a date field, an image field, etc). With the Paragraph field, you can allow the user to select from one or more Paragraph types, each having its own group of fields, and each can have unique styling applied. It’s pretty flexible!&lt;/p&gt;
+
+&lt;p&gt;However, theming can be a bit of a challenge, especially if you’re using component-based theming. Additionally, migrating data via the Migrate module can be a challenge.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-paragraphs&quot;&gt;Benefits of Paragraphs&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Easy-to-create custom Paragraph types&lt;/li&gt;
+  &lt;li&gt;Allows users to easily drop in a new style into content to which the Paragraph type has been assigned&lt;/li&gt;
+  &lt;li&gt;Users can mix and match Paragraph types within the same layout, allowing for a more flexible content management experience.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;search-engine-optimization&quot;&gt;Search Engine Optimization&lt;/h3&gt;
+
+&lt;p&gt;Unfortunately, there is no single module that will completely optimize your site, or lead you in the search engines, but there are a few that can help make it better.&lt;/p&gt;
+
+&lt;h4 id=&quot;pathauto&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/pathauto&quot; target=&quot;_blank&quot;&gt;Pathauto&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Everyone loves a pretty path—especially Google and other search engines! Easy-to-read paths are easier to understand and remember.&lt;/p&gt;
+
+&lt;p&gt;Out of the box, Drupal creates paths for content that look like &lt;em&gt;your_site/node/123&lt;/em&gt;, which is rather meaningless to viewers and search engines.&lt;/p&gt;
+
+&lt;p&gt;Pathauto allows site admins to define URL patterns using Tokens. For example, a simple path pattern using the Token &lt;em&gt;[node:title]&lt;/em&gt; takes the title and converts it to a clean variation of the content title; if the title is “My Birthday Wishlist”, this module will cause the path to be displayed as &lt;em&gt;your_site/my-birthday-wishlist.&lt;/em&gt; This clean URL makes sense to both visitors and search engines.&lt;/p&gt;
+
+&lt;p&gt;For a slightly more complex example, use multiple tokens separated by the / character: &lt;em&gt;[node:content-type]/[node:title]&lt;/em&gt; will display an Article called “Hello World” at the path &lt;em&gt;your_site/article/hello-world&lt;/em&gt; and a Board Member called “Jane Smith” at &lt;em&gt;your_site/board-member/jane-smith&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;By combining different Tokens and configuration settings, you can generate much better organic search results for your content.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-pathauto&quot;&gt;Benefits of Pathauto&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Makes an ugly URL look prettier, to both the visitor and to search engines&lt;/li&gt;
+  &lt;li&gt;Allows you to customize url using tokens&lt;/li&gt;
+  &lt;li&gt;Automates the process of assigning these pretty (called “clean”) urls.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;metatag&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/metatag&quot; target=&quot;_blank&quot;&gt;Metatag&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Meta-tags are hidden snippets of text that describe a page’s content to search engines. The Metatag module allows you to set up tokens to automatically pull information from your content, such as content title, page url, and other field data and automatically turn them into meta-tags.&lt;/p&gt;
+
+&lt;p&gt;This helps improve your site’s SEO rankings when Google looks for meta-tag information and sees that it matches visible content. For some advanced configuration tips, check out &lt;a href=&quot;https://evolvingweb.ca/blog/perfect-your-facebook-link-previews-drupal-metatag-module&quot; target=&quot;_blank&quot;&gt;Trevor Kjorlien’s article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-metatag&quot;&gt;Benefits of Metatag&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Automates the creation of meta-tags&lt;/li&gt;
+  &lt;li&gt;Improves SEO automatically&lt;/li&gt;
+  &lt;li&gt;Sounds like a cool, Sci-Fi, deadly mutant full contact sport&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;google-analytics&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/google_analytics&quot; target=&quot;_blank&quot;&gt;Google Analytics&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Google Analytics provides you with the information you need to make good marketing and optimization decisions.&lt;/p&gt;
+
+&lt;p&gt;Once Google has all of the needed information, you can see site usage statistics in visualizations that will give you insight into user behavior, and site usage. Setup can be a bit tricky, but luckily, OS Training has provided a &lt;a href=&quot;https://youtube.com/watch?v=2wFXo-vnhWs&quot;&gt;free v&lt;/a&gt;&lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;ideo to get you up and running in a snap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;google-tag-manager&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/google_tag&quot; target=&quot;_blank&quot;&gt;Google Tag Manager&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;While Google Analytics is great, it doesn’t give you the pinpoint accuracy you might be looking for. For example, do you want to know when visitors click your call-to-action buttons?&lt;/p&gt;
+
+&lt;p&gt;The Google Tag Manager gives you an interface to set up “tags” that represent events such as what specific site-clicks to track. This module lets you do this without all without the need of a developer or even visiting the Google Analytics manager.&lt;/p&gt;
+
+&lt;p&gt;It’s a great tool for the marketing geek in your organization.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-google-analytics-and-tag-manager&quot;&gt;Benefits of Google Analytics and Tag Manager&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Helps you gather site analytics data automatically&lt;/li&gt;
+  &lt;li&gt;Provide great interfaces for managing your data collection process&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are many other SEO tools and techniques which you can implement, but these tools should get you started in the right direction.&lt;/p&gt;
+
+&lt;h3 id=&quot;customer-interaction-tools&quot;&gt;Customer Interaction Tools&lt;/h3&gt;
+
+&lt;h4 id=&quot;webform&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/webform&quot; target=&quot;_blank&quot;&gt;Webform&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Webform is the most commonly used module for making forms and surveys in Drupal. It provides an easy interface to create single or multi-page forms, add fields, and manage submissions. This is one of the most important modules for providing interaction with your visitors. You can create “Contact Us” forms, surveys, quotation request forms, and more.&lt;/p&gt;
+
+&lt;p&gt;Providing users with opportunities to give you more information is one of the best ways to build and strengthen relationships, gather actionable data, and show your site visitors that you are interested in their questions and concerns, thus building a reputation of caring.&lt;/p&gt;
+
+&lt;p&gt;Several other modules are available to extend the capabilities of the Webform module.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Webform Views: integrates Webform 8.x-5.x and Views modules&lt;/li&gt;
+  &lt;li&gt;Webform Analysis: used to obtain statistics on the results of form submissions&lt;/li&gt;
+  &lt;li&gt;Webform Rest: retrieve and submit webforms via REST.&lt;/li&gt;
+  &lt;li&gt;Webform Encrypt: provides encryption for webform elements.&lt;/li&gt;
+  &lt;li&gt;Webform Composite Tools&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;benefits-of-webform&quot;&gt;Benefits of Webform&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Provides an easy-to-use interface for creating user forms&lt;/li&gt;
+  &lt;li&gt;Provides a reporting system&lt;/li&gt;
+  &lt;li&gt;See collected user data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;administrative-tools&quot;&gt;Administrative Tools&lt;/h3&gt;
+
+&lt;h4 id=&quot;admin-toolbar&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/admin_toolbar&quot; target=&quot;_blank&quot;&gt;Admin Toolbar&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;If you’re administering a website, you want to get the job done fast. Nothing slows you down like having to click a page, wait for it to load so you can see links to related pages, then have to click one of those to see another list of child pages before you can get to the page you need.&lt;/p&gt;
+
+&lt;p&gt;The answer? Dropdown menus listing all of those child pages in a nested fashion so you can directly navigate to your desired page. The Admin toolbar makes this possible, automatically converting menu items into drop-down items when hovering over them, showing you the child pages.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-admin-toolbar&quot;&gt;Benefits of Admin Toolbar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Converts admin menus to dropdowns&lt;/li&gt;
+  &lt;li&gt;Makes your admin menu system easier to work with&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;devel&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/devel&quot; target=&quot;_blank&quot;&gt;Devel&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Devel is a solid choice for troubleshooting Drupal and testing new code. The Devel module also provides a module called &lt;em&gt;Web Profiler&lt;/em&gt; which can help you troubleshoot performance issues. It provides a customizable toolbar at the bottom of the window of your website with a wealth of information you can use to troubleshoot and optimize your site. To learn more about using the Web Profiler module, watch this video by &lt;a href=&quot;https://www.youtube.com/watch?v=pHf128w-1QQ&amp;amp;feature=emb_title&quot;&gt;WebWash&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-devel&quot;&gt;Benefits of Devel&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Makes your development experience so much better. Need we say more?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;devel-php&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/devel_php&quot;&gt;Devel PHP&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The ability to run PHP commands from a development page in Drupal has been removed from the Devel module. This module adds it back in. Install the module, navigate to &lt;em&gt;your-site/devel/php&lt;/em&gt;, and you have a window where you can drop in any PHP code.&lt;/p&gt;
+
+&lt;p&gt;It’s a great tool! Just make sure that you use the Devel modules in development environments only, and never enable them on a production website due to security concerns.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-devel-php&quot;&gt;Benefits of Devel PHP&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Brings the Execute PHP page back to Devel in Drupal 8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;backupmigrate&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/backup_migrate&quot; target=&quot;_blank&quot;&gt;Backup/Migrate&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This module is a fantastic tool for creating database backups of your website and migrating that data to another site. It provides you with an easy to use interface with options to create backups, manage and download those backups, and of course, upload and restore your backups. This makes it easy to migrate your database to another server or even your local development machine by downloading your backup, navigating to the Backup/Migrate screen on your target installation and importing that backup file.&lt;/p&gt;
+
+&lt;p&gt;If you don’t want to run all of these activities from the command line like a true geek, this is definitely a must have tool for you.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-backupmigrate&quot;&gt;Benefits of Backup/Migrate&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Makes managing backups and restoring them a breeze&lt;/li&gt;
+  &lt;li&gt;No need for a MySQL client or working from the command line&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;entity-embed-module&quot;&gt;&lt;a href=&quot;https://www.drupal.org/project/entity_embed&quot; target=&quot;_blank&quot;&gt;Entity Embed Module&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Ever want to have a node teaser show up on another node? Well, the old fashioned approach was to add a node_embed field, which essentially added a field that needed to be themed and positioned in a fairly rigid manner. And what if you wanted to include an image? Now you needed an image field. Every time you wanted to display another piece of content, you had to request yet another field. Why couldn’t you just drop in content on demand?&lt;/p&gt;
+
+&lt;p&gt;With the Entity Embed module, you can create custom embed types, such as one for nodes. A button is created for each type which you can add to the CKEditor bar and even customize the icon for the button. Then, when editing full text fields in your content, you just click a button to insert one of your custom embed types into the text.&lt;/p&gt;
+
+&lt;p&gt;For example, if it’s a node, you can have the full node or any one of the node displays. You can embed just about any kind of content into your text field using this module. For a good in depth guide on working with this module, &lt;a href=&quot;https://www.lullabot.com/articles/how-to-embed-just-about-anything-in-drupal-8-entity-embed-url-embed,&quot;&gt;see this article&lt;/a&gt;, which explains its use and related modules as well.&lt;/p&gt;
+
+&lt;h4 id=&quot;benefits-of-entity-embed&quot;&gt;Benefits of Entity Embed&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gives you the power to embed all kinds of content into full text fields&lt;/li&gt;
+  &lt;li&gt;Gives you the power to create buttons to embed your content&lt;/li&gt;
+  &lt;li&gt;Allows you to assign icons to the different embedding buttons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, there you have it! Drupal has thousands of community-contributed modules. Drupal’s APIs allow you to extend your site with custom code in practically infinite ways!&lt;/p&gt;
+
+&lt;p&gt;The modules mentioned in this collection are a great place to start, but if you are looking for something more specific, hop on over to the Drupal &lt;a href=&quot;https://www.drupal.org/project/project_module&quot;&gt;contributed module search page&lt;/a&gt;. You’ll be sure to find a lot of interesting modules. Don’t be afraid to experiment.&lt;/p&gt;
+
+&lt;p&gt;Of course, it’s always best to experiment on a local testing environment. If you don’t have one of those setup, you should checkout the &lt;a href=&quot;https://bitnami.com/stack/drupal/installer&quot;&gt;Bitnami Drupal stack&lt;/a&gt; for an instant Drupal development site. Just run the installer and you’ll have a site ready to develop on. You can find installers for Windows, Mac and Linux.&lt;/p&gt;</content><author><name>Jamie Valentin</name></author><summary type="html">Pretend you’re a DIYer, getting ready to remodel your house.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/uploads/christopher-gower-m_hrflhgabo-unsplash.jpg" /><media:content medium="image" url="https://drupal-contractors.github.io/uploads/christopher-gower-m_hrflhgabo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Using Headless CMS for Drupal: When and Why?</title><link href="https://drupal-contractors.github.io/blog/2021/01/20/using-headless-cms-for-drupal-when-and-why/" rel="alternate" type="text/html" title="Using Headless CMS for Drupal: When and Why?" /><published>2021-01-20T17:08:14+00:00</published><updated>2021-01-20T17:08:14+00:00</updated><id>https://drupal-contractors.github.io/blog/2021/01/20/using-headless-cms-for-drupal-when-and-why</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2021/01/20/using-headless-cms-for-drupal-when-and-why/">&lt;p&gt;Headless CMS has been a hot new web trend, and is gaining steam in many different applications. But is it a one size fits all solution? While Headless CMS can provide flexible results, it may not be the best tool for every job. Let’s delve into this wonderful world of “Decoupled” or &lt;strong&gt;Headless CMS&lt;/strong&gt;, and consider the pros and cons.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-headless-cms&quot;&gt;&lt;strong&gt;What is “Headless CMS”?&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;A Headless CMS (sometimes referred to as Decoupled) is a content management system that has no view layer &lt;em&gt;and&lt;/em&gt; delivers your content as a text-based representation–typically JSON or XML. To display, simply parse the information, and use in a custom-made view. This custom view (also known as “the front-end”) will request and consume the data to populate the content of your view.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-might-headless-cms-look-in-drupal&quot;&gt;&lt;strong&gt;How Might Headless CMS Look in Drupal?&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;To start with, let’s take a look at a simple custom Blog component that was written to display a blog from Drupal JSON:API data (truncated to show most relevant details).&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const Blog = () =&amp;gt; {
+  
+/*
+Here, an object of “articles” is fetched from an API call to a Drupal backend. 
+*/
+
+  const blogItems = articles.map((item) =&amp;gt; {
+	const title = item.attributes.title;
+	const body = item.attributes.body.value;
+	let date = new Date(item.attributes.created);
+	date = moment(date).format(&quot;DD MMMM YYYY&quot;);
+
+	return (
+  	&amp;lt;BlogItem
+    	title={title}
+    	body={body}
+    	date={date}
+    	id={item.id}
+    	key={item.id}
+  	/&amp;gt;
+	);
+  });
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you are familiar with front-end frameworks, you likely won’t find this format to be out-of-the-ordinary. It simply takes data that Drupal provides by the JSON:API core module, and then uses this data to build a frontend component that is separate from Drupal, rendering it “Headless”.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at the structure of the JSON shape that fuels the above component.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;data: [ 
+  {
+      ...,
+      attributes: {
+        title: &quot;&quot;,
+        body: { ... } 
+      ...,
+  },
+  { ... },
+  { ... },
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, there is some nesting, but the structure is also familiar from node to node, and the JSON:API standard is opinionated and well documented (&lt;a href=&quot;https://jsonapi.org/&quot; title=&quot;https://jsonapi.org/&quot;&gt;https://jsonapi.org/&lt;/a&gt;). Because of this, when you opt for a Decoupled or Headless approach, you need to familiarize yourself with JSON:API, but then have quite a predictable data model to work with in this approach. That said, this highlights that this approach implies that you are willing to put in the overhead, and thus this may not be a method you want to use for every project and scenario.&lt;/p&gt;
+
+&lt;h3 id=&quot;when-to-embrace-headless-cms-with-drupal&quot;&gt;&lt;strong&gt;When to Embrace Headless CMS with Drupal?&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;When you use a Headless CMS, you open up a whole new world of possibilities. Because the data is separated from the view(s), you can display data in numerous ways. You now can cater for as many use cases as you are willing to build views–like kiosks, mobile apps, or reactive web pages.&lt;/p&gt;
+
+&lt;p&gt;If your project demands the aggregation of multiple data sources, a Headless CMS could be a possible option. If your data layer is not closely coupled to your view, then you will not be tied to a single source of data. You can provide a rich user experience with components, plugins, or widgets that utilize their own data sources, or those of a third-party.&lt;/p&gt;
+
+&lt;p&gt;Modern reactive frameworks (React, Vue, Angular, etc.) allow you to build a dynamic user experience, free of the clunkiness of page refreshes. Of course, when you use a Headless CMS, you open up this possibility. If you have a highly active blog that has frequent updates, you may want to consider the headless approach to keep the data current without page refreshes.&lt;/p&gt;
+
+&lt;h3 id=&quot;when-to-avoid-headless-cms-with-drupal&quot;&gt;&lt;strong&gt;When to Avoid Headless CMS with Drupal?&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;A headless CMS is not a one-size-fits-all solution. There are several use cases where you may wish to take a more traditional approach.&lt;/p&gt;
+
+&lt;p&gt;If your data is static, for example, it doesn’t make a lot of sense for the extra overhead of building a headless experience. In most situations, the best solution is usually the one with fewer moving parts. By its very nature, headless architecture introduces more complexity. If you have a specific use case, it makes more sense to use a more traditional approach. Flexibility is appealing, but if it’s not needed then you are just wasting resources.&lt;/p&gt;
+
+&lt;p&gt;While it is often appealing to want to use the latest web trend for your projects, it is worth remembering that each tool, programming language, or paradigm has pros and cons. It is a good idea to consider multiple options when you begin a project. Being aware of the gains and compromises that come with a technology choice can help you avoid hurt later down the road. That way, you can ensure you deliver the best result for your end-user.&lt;/p&gt;
+
+&lt;p&gt;And if you need help deciding on your latest tool or approach to your Drupal-based projects, we’re here to help you grow!&lt;/p&gt;</content><author><name>Liam Hockley</name></author><summary type="html">Headless CMS has been a hot new web trend, and is gaining steam in many different applications. But is it a one size fits all solution? While Headless CMS can provide flexible results, it may not be the best tool for every job. Let’s delve into this wonderful world of “Decoupled” or Headless CMS, and consider the pros and cons.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/uploads/wonderlane-fkhpejze0c4-unsplash.jpg" /><media:content medium="image" url="https://drupal-contractors.github.io/uploads/wonderlane-fkhpejze0c4-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Come to Commerce, the Drupal Way</title><link href="https://drupal-contractors.github.io/blog/2020/11/09/come-to-commerce-the-drupal-way/" rel="alternate" type="text/html" title="Come to Commerce, the Drupal Way" /><published>2020-11-09T08:00:00+00:00</published><updated>2020-11-09T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/09/come-to-commerce-the-drupal-way</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/09/come-to-commerce-the-drupal-way/">&lt;p&gt;Drupal Commerce is the defacto, go-to, solution for enabling one of the world’s premiere CMS for e-commerce. Commerce is on its second major version and offers compatibility with versions 7, 8 and now 9 of the Drupal CMS. Commerce is loved by many because:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It Makes No Assumptions About How Your Business Works&lt;/li&gt;
+  &lt;li&gt;Building a Store is Straightforward and Easy&lt;/li&gt;
+  &lt;li&gt;There is More to the Store than Just Products&lt;/li&gt;
+  &lt;li&gt;Everybody’s Favorite: It Helps You Get Paid&lt;/li&gt;
+  &lt;li&gt;Expert Help is Within Reach If You Need It&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now that you know what Drupal Commerce is, it is time to take a look at what Commerce can do for you.&lt;/p&gt;
+
+&lt;h4 id=&quot;makes-no-assumptions&quot;&gt;Makes No Assumptions&lt;/h4&gt;
+
+&lt;p&gt;The versatility that Commerce offers out of the box is phenomenal and will literally work with any type of business. This versatility is achieved because it makes no predetermined decisions about how your business should function.&lt;/p&gt;
+
+&lt;h4 id=&quot;not-your-grandpas-integration-a-cms-first-class-citizen&quot;&gt;Not Your Grandpa’s Integration: A CMS First-Class Citizen&lt;/h4&gt;
+
+&lt;p&gt;This is not a mere integration, Commerce is built using content as its building blocks and has massive community support behind it. Commerce never feels like it is shoehorned into the CMS, it feels like a first-class citizen in the Drupal ecosystem. Site builders feel right at home with building out the necessary pieces of their online store.&lt;/p&gt;
+
+&lt;h4 id=&quot;commerce-has-you-covered-with-flexible-payment-models&quot;&gt;Commerce has you covered with flexible payment models&lt;/h4&gt;
+
+&lt;p&gt;Standard, recurring, licensing and subscription payment models are all easily implemented in Commerce. Leverage prepaid and postpaid billing, powerful proration tools and configurable retry logic for failed payments. If you have a payment model need, Commerce and its community has a solution for you and your team.&lt;/p&gt;
+
+&lt;h4 id=&quot;easy-to-use-even-for-non-technical-site-builders&quot;&gt;Easy to use even for non-technical site builders&lt;/h4&gt;
+
+&lt;p&gt;Experienced Drupal Site Builders will feel right at home working with Commerce entities and newbies can be onboarded quickly given the vast documentation out there for Drupal Commerce. &lt;a href=&quot;https://commerceguys.com/&quot; target=&quot;_blank&quot;&gt;The Commerce Guys&lt;/a&gt; (maintainers of Commerce) have put a commendable effort into &lt;a href=&quot;https://docs.drupalcommerce.org/&quot; target=&quot;_blank&quot;&gt;creating documentation&lt;/a&gt; for the end user and not just for developers.&lt;/p&gt;
+
+&lt;h4 id=&quot;open-source-and-very-extensible-allowing-for-integrations-of-all-kinds&quot;&gt;Open source and very extensible allowing for integrations of all kinds&lt;/h4&gt;
+
+&lt;p&gt;Just like Drupal, Commerce is open source so you get the benefit of a multitude of developers constantly enhancing the software and addressing any shortcomings. If, by chance, a feature is missing, Drupal Commerce is very extensible and leverages a plugin type architecture allowing developers to easily fill any feature gaps for your business.&lt;/p&gt;
+
+&lt;h3 id=&quot;can-you-build-it-yes-you-can&quot;&gt;Can You Build It? Yes You Can&lt;/h3&gt;
+
+&lt;p&gt;Warning, developers only. The following section is aimed at a Drupal developer that would like to spin up a Drupal Commerce site. If that is not you skip to the next section titled: Ludwig, the non-techie path.&lt;/p&gt;
+
+&lt;h4 id=&quot;composer-based-install&quot;&gt;Composer based install&lt;/h4&gt;
+
+&lt;p&gt;Thank goodness for Composer, with just a few short commands you can have a Drupal Commerce site up and running locally. We’ll take a quick look at this from both a brand new site perspective as well as enabling an existing site with Commerce power.&lt;/p&gt;
+
+&lt;h5 id=&quot;new-site&quot;&gt;New Site&lt;/h5&gt;
+
+&lt;p&gt;Start with a single composer command and let the magic of Commerce begin. (Update “esteemedshop” with your project name of choice)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;composer create-project drupalcommerce/project-base
+esteemedshop --prefer-source --stability dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For local dev, I do like &lt;a href=&quot;https://www.ddev.com/&quot; target=&quot;_blank&quot;&gt;DDEV&lt;/a&gt;, it makes getting up and running that much easier, so your next step should be:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd esteemedshop
+ddev config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The config command will ask you three questions about project name, docroot and project type. The defaults are great for all three of these questions.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make sure Docker is running and start your engines:&lt;/p&gt;
+
+    &lt;p&gt;ddev start&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;existing-site&quot;&gt;Existing Site&lt;/h5&gt;
+
+&lt;p&gt;Navigate to your Drupal installation and let Composer know that you want the Commerce treatment:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /path/to/drupal/shop
+composer require &quot;drupal/commerce&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next you’ll want to enable the commerce suite of modules. Using DDev and Drush you can enable them using this command:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ddev exec drush en commerce_product commerce_checkout commerce_cart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;ludwig-the-non-techie-path&quot;&gt;Ludwig, the non-techie path&lt;/h4&gt;
+
+&lt;p&gt;If you’re not a developer or you’re command-line-aphobic, there is a way to set up shop through Drupal’s UI.&lt;/p&gt;
+
+&lt;h5 id=&quot;modules&quot;&gt;Modules&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enable the Update Manager from the Extend admin menu. Once it is installed you can navigate to Reports -&amp;gt; Available updates.&lt;/li&gt;
+  &lt;li&gt;In another window navigate to the Ludwig module page on drupal.org and grab a copy of the link to the tar.gz of the latest release.&lt;/li&gt;
+  &lt;li&gt;Click “Install new module or theme” on the Available updates page and paste the tar.gz link into the “Install from a URL” textbox, then click Install. Once the installation is done, you’ll be presented with a confirmation screen similar to this:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Navigate to “Enable newly added modules”, select the Ludwig module and click install. The next steps will require that you have access to the file system where your Drupal site exists. Download these modules to the following directory:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/path/to/drupal/shop/web/modules/contrib
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.drupal.org/project/commerce&quot;&gt;Commerce&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.drupal.org/project/entity&quot;&gt;Address Entity API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.drupal.org/project/entity_reference_revisions&quot;&gt;Entity Reference Revisions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.drupal.org/project/inline_entity_form&quot;&gt;Inline Entity Form&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.drupal.org/project/profile&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.drupal.org/project/state_machine&quot;&gt;State Machine&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;packages&quot;&gt;Packages&lt;/h5&gt;
+
+&lt;p&gt;Similar to the work that Composer does, Ludwig finds packages that are required by the Commerce modules. You can see a list of these packages by navigating to Reports-&amp;gt;Packages, where you will see a list like this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download the missing packages, unzip them and place then in the path as directed. The path will be local to your Drupal installation.&lt;/li&gt;
+  &lt;li&gt;Install the commerce modules along with its 6 dependent modules that were downloaded in the earlier step.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;updates&quot;&gt;Updates&lt;/h5&gt;
+
+&lt;p&gt;In the future, when Commerce needs to be updated then you will need to update Commerce and all 6 of its dependent modules to make sure the entire suite is up to date.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-store-products-orders--more&quot;&gt;The Store: Products, Orders &amp;amp; More&lt;/h3&gt;
+
+&lt;p&gt;Congratulations, if you’ve made it this far then the code is in place, you’re ready to open up and what’s a store without some products?&lt;/p&gt;
+
+&lt;h4 id=&quot;products&quot;&gt;Products&lt;/h4&gt;
+
+&lt;p&gt;Products can be either tangible or intangible items that you wish to sell in your store. This is where Commerce really shines, as it allows you to build out your sellable items using attributes for each product type resulting in unique product variations.&lt;/p&gt;
+
+&lt;h4 id=&quot;product-types&quot;&gt;Product Types&lt;/h4&gt;
+
+&lt;p&gt;A product type is the basic building block of products inside of Commerce. Use the admin menu to navigate to Commerce-&amp;gt; Configuration-&amp;gt; Products-&amp;gt; Product Types to begin creating types and prepare your store for the attributes you will associate with the new type.&lt;/p&gt;
+
+&lt;h4 id=&quot;attributes&quot;&gt;Attributes&lt;/h4&gt;
+
+&lt;p&gt;A product attribute is akin to a selectable or customizable piece of the product type. Let’s take coffee for instance, there’s lots of decisions to be made when you order a cup of coffee like size, flavor, creamer, sweetener, and the list can go on and on. Each attribute can be tied to one or more product types. Expounding on this example, you could have a coffee product and a tea product that might share attributes like size, creamer and sweetener for instance, but also have unique attributes that are assigned to each product respectively. During attribute creation/updating, you can link to the appropriate product type(s).&lt;/p&gt;
+
+&lt;h4 id=&quot;variations&quot;&gt;Variations&lt;/h4&gt;
+
+&lt;p&gt;Product variations (a product with attributes selected) can be created up front by the store administrator and displayed for ease of selection or they can be dynamically created by exposing attributes so your customer can customize their product. Product architecture is a complex subject and one that can quite honestly make your head spin. For more information about product architecture I recommend checking out the &lt;a href=&quot;https://docs.drupalcommerce.org/commerce2/developer-guide/products/product-architecture/product-architectures&quot; target=&quot;_blank&quot;&gt;Commerce Guys Product Architecture guide&lt;/a&gt; or reaching out to an &lt;a href=&quot;https://esteemed.io/&quot; target=&quot;_blank&quot;&gt;Esteemed expert&lt;/a&gt; for help.&lt;/p&gt;
+
+&lt;h4 id=&quot;orders&quot;&gt;Orders&lt;/h4&gt;
+
+&lt;p&gt;Who bought what, how much they paid and how many they should receive describes an order in Commerce. Order creation can occur as a result of a checkout flow or by manually creating the order as an administrator.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-workflow&quot;&gt;The Workflow&lt;/h4&gt;
+
+&lt;p&gt;The workflow of an order depends on several factors such as the order type, configured checkout flows and whether a customer is completing the order directly or an administrator is creating the order on the customer’s behalf. Four workflows exist by default in Drupal Commerce, and if those don’t wet your whistle then you can create your own programmatically.&lt;/p&gt;
+
+&lt;h4 id=&quot;order-types&quot;&gt;Order Types&lt;/h4&gt;
+
+&lt;p&gt;Order types allow the defining of different workflows based on the type of products being ordered. For instance if you’re selling a product that is physically going to be shipped somewhere, then you would want an order type that goes through a fulfillment type process. This would differ if you were just going to sell someone a cup of joe and hand it right to them which would only require a simple payment process. Order types can be created/updated by navigating from the admin menu to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Commerce -&amp;gt; Configuration -&amp;gt; Orders -&amp;gt; Order types&lt;/code&gt;. The available order workflows will be listed on this page.&lt;/p&gt;
+
+&lt;h4 id=&quot;checkout-flows&quot;&gt;Checkout Flows&lt;/h4&gt;
+
+&lt;p&gt;A checkout flow defines how an order moves to the completion of a checkout. By default a multi-step checkout flow is included in Commerce and facilitates the capture of information related to checkout on multiple screens. Checkout flows are built on top of a programming construct called a plugin and can be easily created or extended by a development resource. Checkout flows can be managed by navigating from the admin menu to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Commerce -&amp;gt; Configuration -&amp;gt; Orders -&amp;gt; Checkout flows&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;currencies&quot;&gt;Currencies&lt;/h4&gt;
+
+&lt;p&gt;Speaking of checking out, what happens when your customer is located in a country that uses a different currency than your business? Multi-currency support is available out of the box and is based on the &lt;a href=&quot;http://cldr.unicode.org/core-spec&quot; target=&quot;_blank&quot;&gt;Unicode CLDR standard&lt;/a&gt;. Currency entities in Drupal allow a currency to be defined with various attributes like a currency code, currency symbol and even the number of decimal points to display. Currencies can be managed by navigating from the admin menu to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Commerce -&amp;gt; Configuration -&amp;gt; Store -&amp;gt; Currencies&lt;/code&gt; where you can add a community provided currency or create your own.&lt;/p&gt;
+
+&lt;h3 id=&quot;wait-how-do-i-get-paid-again&quot;&gt;Wait, How Do I Get Paid Again?&lt;/h3&gt;
+
+&lt;p&gt;Receiving payment in exchange for your product/services is an important part of Commerce and its flexibility is just as powerful as the rest of the Commerce system. Supporting multiple payment gateways, offering the ability to run various promotions on your products, and supporting a variety of tax computations means that Commerce worries about the details and allows your business to focus on what it does best.&lt;/p&gt;
+
+&lt;h4 id=&quot;payment-gateways&quot;&gt;Payment Gateways&lt;/h4&gt;
+
+&lt;p&gt;Payment Gateways facilitate the financial transactions between your business and your customers. At the time of this writing the Commerce Guys list a whopping &lt;a href=&quot;https://docs.drupalcommerce.org/commerce2/developer-guide/payments/available-gateways&quot; target=&quot;_blank&quot;&gt;138 payment gateway contributed modules&lt;/a&gt;, which means you are going to be hard pressed to find a payment provider that is not already supported in Drupal Commerce. Adding a payment gateway to your shop can be done in a few short steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Download and install the corresponding payment gateway module.&lt;/li&gt;
+  &lt;li&gt;Add a new payment gateway by navigating from the admin menu to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Commerce -&amp;gt; Configuration -&amp;gt; Payment -&amp;gt; Payment&lt;/code&gt; gateways.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When adding the new payment gateway you’ll have a chance to configure the gateway based on your expected usage. For instance, if you add a payment gateway based on the Square payment provider you can set it up as either a sandbox gateway for testing or a production gateway for live payment processing.&lt;/p&gt;
+
+&lt;h4 id=&quot;promotions&quot;&gt;Promotions&lt;/h4&gt;
+
+&lt;p&gt;Promotions in Drupal Commerce dictate the various types of discounts that can be applied to a customer’s order. Some default promotions are available out of the box with Commerce, like fixed or percentage amounts taken off of a line item in the order or off the order’s subtotal. These default promotions will cover the majority of use cases out there, but programmatically creating your own or extending the existing ones are easily attainable.&lt;/p&gt;
+
+&lt;h4 id=&quot;taxes&quot;&gt;Taxes&lt;/h4&gt;
+
+&lt;p&gt;While the word “taxes” may sound like nails on a chalkboard to some, this is not a subject you want to ignore or worse implement incorrectly. Navigating from the admin menu to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Commerce -&amp;gt; Configuration -&amp;gt; Store -&amp;gt; Tax&lt;/code&gt; types will land you on a screen that lists existing tax setups and allow you to add new ones. Drupal Commerce will allow you to easily pair a tax rate with a territory and even allow you to limit it by postal code.&lt;/p&gt;
+
+&lt;h3 id=&quot;let-an-esteemed-expert-guide-you-to-a-better-commerce-experience&quot;&gt;Let an Esteemed Expert Guide You to a Better Commerce Experience&lt;/h3&gt;
+
+&lt;p&gt;Believe it or not, this article covers only the tip of the iceberg with Drupal Commerce and all that it offers. It is a very important part of any business’s online footprint. Are you currently navigating the depth of Commerce with limited resources? If so, let &lt;a href=&quot;https://esteemed.io/&quot; target=&quot;_blank&quot;&gt;Esteemed&lt;/a&gt; redefine your capacity with a dynamic team today. Flexible options are available to allow engagement with esteemed experts quickly and efficiently. Flip your virtual open sign and begin reaching your customers around the globe and make your mark on the world.&lt;/p&gt;</content><author><name>Tyler Ashbaugh</name></author><summary type="html">Drupal Commerce is the defacto, go-to, solution for enabling one of the world’s premiere CMS for e-commerce. Commerce is on its second major version and offers compatibility with versions 7, 8 and now 9 of the Drupal CMS. Commerce is loved by many because:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/img/come-to-commerce.png" /><media:content medium="image" url="https://drupal-contractors.github.io/img/come-to-commerce.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What is Drupal</title><link href="https://drupal-contractors.github.io/blog/2020/11/09/what-is-drupal/" rel="alternate" type="text/html" title="What is Drupal" /><published>2020-11-09T08:00:00+00:00</published><updated>2020-11-09T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/09/what-is-drupal</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/09/what-is-drupal/">&lt;p&gt;In web development, many terms, languages, and products float around daily. Drupal is one of these buzzwords. Despite its heavy presence across the web, very few web developers have heard of Drupal. Many have heard of WordPress, due to its popularity. But Drupal remains a mystery.&lt;/p&gt;
+
+&lt;p&gt;If you haven’t investigated Drupal on your own, this article will be a companion in your journey as you learn more about the CMS. Let’s clarify what Drupal is, and what it’s not.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-drupal&quot;&gt;What Is Drupal?&lt;/h3&gt;
+
+&lt;p&gt;Drupal is commonly defined as a CMS. For developers and non-developers, a CMS simplifies the process of creating and managing a website. A CMS provides tools such as word processors, built-in security, and a menu management system for custom content.&lt;/p&gt;
+
+&lt;p&gt;A database stores the custom content. This database is generally structured to allow a non-developer to add new content, &lt;a href=&quot;https://app.drupalcontractors.com/blogs/drupal-8-temp-store-temporary-data-storage&quot; target=&quot;_blank&quot;&gt;various field types&lt;/a&gt;, and even rules to validate data-entry.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-does-drupal-work&quot;&gt;How Does Drupal Work?&lt;/h3&gt;
+
+&lt;p&gt;Drupal uses the database method for content storage, allowing you to create custom content immediately. This is one of its more popular perks. In Drupal, these content records are known as nodes.&lt;/p&gt;
+
+&lt;p&gt;Additionally, you can tag your content using Drupal’s Taxonomy system. Here, you can create custom categories, known as Vocabularies. Each vocabulary has one or more terms that are applied to content. As you can see, if you start working with a system like Drupal, there’s a lot of terminology to learn.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-more-can-i-do-with-drupal&quot;&gt;What More Can I do With Drupal?&lt;/h3&gt;
+
+&lt;p&gt;What else can you do with your content? You can add advanced field types to hold files, dates, addresses, currency values, media, and more. Most of these are built right into Drupal and ready for you to use out of the box.&lt;/p&gt;
+
+&lt;p&gt;In newer versions of Drupal, it’s easy to create content types and add custom fields. You can display your content by grouping individual pages by content nodes, or group one or more nodes in a list. You can automatically paginate long lists as well. Stumped on where to start? Check out their case studies for &lt;a href=&quot;https://www.drupal.org/case-studies/community&quot; target=&quot;_blank&quot;&gt;more project ideas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Drupal separates content management from website design. You can safely modify the look and functionality of your environment, without affecting content you’ve created—even if that content depends on the functionality or styling to properly display. In those cases, it’s simply a matter of porting the custom functionality over to the new theme and you’re good to go.&lt;/p&gt;
+
+&lt;p&gt;One of the most important benefits of using Drupal is the Drupal Community. Drupal developers are well known for their willingness to help out, and several support forums have been created to enable users to ask questions and get assistance from other developers.&lt;/p&gt;
+
+&lt;p&gt;Your Drupal system possesses many other strengths. It’s a wrapper for creating a site that manages the storage, retrieval, and display of data that you create. It’ll give you a head-start in the race to deliver a great website.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-drupal-is-not&quot;&gt;What Drupal Is Not&lt;/h3&gt;
+
+&lt;p&gt;Now that we’ve answered what Drupal is, let’s determine what Drupal is not:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It’s not a one-stop solution. Drupal is the framework to build your idea. You still have to do some work, and it’s not always easy going.&lt;/li&gt;
+  &lt;li&gt;It’s not an impenetrable fortress. Yes, Drupal is secure. But it requires some level of security knowledge, as well as patches and updates.&lt;/li&gt;
+  &lt;li&gt;It’s not a pre-designed system. In fact, it’s fair to say that it will require the services of a web designer.&lt;/li&gt;
+  &lt;li&gt;It’s not a one-size-fits-all solution. Any great Drupal project requires customization to meet your particular needs.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Beyond these capabilities, there’s still a lot to learn about Drupal. This brief introduction to Drupal’s features shows its capabilities, even in the hands of a new user. Drupal is a tool designed to create simple or complex sites, without having to build every aspect of the site.&lt;/p&gt;
+
+&lt;p&gt;With Drupal, you can use the built in features of the system, or extend the system with contributed modules and custom themes. There’s much more to learn about the Drupal system if you’re looking to leverage its power. The best thing to do is head over to their &lt;a href=&quot;https://www.drupal.org/&quot; target=&quot;_blank&quot;&gt;website&lt;/a&gt; and take a look around.&lt;/p&gt;
+
+&lt;p&gt;At Drupal Contractors, we provide world-class Drupal talent that brands can trust — through tools they already use. We work as an extension of our clients in close collaboration to provide vetted architects, developers, designers and digital professionals. If you need help hiring for digital, or to scale up to meet demand, please &lt;a href=&quot;https://drupalcontractors.com&quot; target=&quot;_blank&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sean Robertson</name></author><summary type="html">In web development, many terms, languages, and products float around daily. Drupal is one of these buzzwords. Despite its heavy presence across the web, very few web developers have heard of Drupal. Many have heard of WordPress, due to its popularity. But Drupal remains a mystery.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/img/what-is-drupal.jpg" /><media:content medium="image" url="https://drupal-contractors.github.io/img/what-is-drupal.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">8 Tips for Acquia Certification</title><link href="https://drupal-contractors.github.io/blog/2020/11/09/8-tips-for-acquia-certification/" rel="alternate" type="text/html" title="8 Tips for Acquia Certification" /><published>2020-11-09T08:00:00+00:00</published><updated>2020-11-09T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/09/8-tips-for-acquia-certification</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/09/8-tips-for-acquia-certification/">&lt;p&gt;Acquia’s certification program helps set the standard for assessing a programmer’s knowledge and experience with Drupal. By understanding which exams a developer has passed, employers know their exact skill level. Clients can rest assured that they are working with real professionals. Programmers and their colleagues can engage in friendly competition. It’s important for Acquia too; they look at the number of certified specialists when considering agency-partnership applications.&lt;/p&gt;
+
+&lt;p&gt;If you’re not familiar or just getting started with Acquia, here are the main certifications used to test a developer’s Drupal knowledge:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Acquia Certified Site Builder, D8&lt;/strong&gt;: tests a developer’s ability to create Drupal sites using core modules and/or additional modules.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Acquia Certified Developer, D8&lt;/strong&gt;: tests a Drupal developer’s fundamental knowledge in web programming, website building, front-end and back-end programming.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Acquia Certified Front End Specialist, D8&lt;/strong&gt;: tests a Drupal developer’s skills and knowledge in front-end programming.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Acquia Certified Back End Specialist, D8&lt;/strong&gt;: tests a developer’s skills and knowledge in creating and implementing Drupal solutions using code or module development.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Acquia Grand Master&lt;/strong&gt;: an honorary title for those who are certified in the Acquia Developer, Front-end, and Back-end specialties.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition to the many titles above, there are also certificates for Acquia products:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Acquia Certified Cloud Pro&lt;/strong&gt;: tests a developer’s knowledge and experience with the Acquia Cloud hosting platform.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Acquia Certified Site Factory Pro&lt;/strong&gt;: tests a developer’s knowledge and experience with the Acquia Cloud Site Factory multi-siting platform.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With the arrival of Drupal 9, Acquia has prepared some new certificates. However, there are only two current certifications as there are few Drupal products on this version.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-certified-with-acquia&quot;&gt;Getting Certified with Acquia&lt;/h2&gt;
+
+&lt;p&gt;You might be wondering if earning a certification from Acquia is worth it. I believe it is. Not convinced or looking to understand more before taking the next step? Read on to learn how and why to get certified with Acquia.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-boost-your-candidacy&quot;&gt;1. Boost Your Candidacy&lt;/h3&gt;
+
+&lt;p&gt;An Acquia certification demonstrates not only the breadth of your Drupal skills, but also increases your value in the workforce. You will become an employer’s preferred choice over other uncertified candidates. Additionally, as you will be a more qualified specialist, you’ll increase your earning potential for your work.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-test-your-knowledge&quot;&gt;2. Test Your Knowledge&lt;/h3&gt;
+
+&lt;p&gt;If you don’t know much about Drupal, I don’t recommend you take this test. The price of an Acquia certification ranges between $155-350, depending on the discipline. If you take this test without knowing fundamentals, you’ll just waste your money and time.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-take-a-refresher&quot;&gt;3. Take a Refresher&lt;/h3&gt;
+
+&lt;p&gt;If you are familiar with Drupal, however, it doesn’t hurt to study up for the exam. What will help you to prepare?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://training.acquia.com/study-guides&quot; target=&quot;_blank&quot;&gt;Study guides for each of the Acquia exams.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/WidgetsBurritos/d8-studyguide&quot; target=&quot;_blank&quot;&gt;Community training materials for preparation.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/AcquiaTV/playlists&quot; target=&quot;_blank&quot;&gt;Acquia Youtube channel with educational materials.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.drupal.org/docs/user_guide/en/index.html&quot; target=&quot;_blank&quot;&gt;Drupal 8 user guide.&lt;/a&gt;
+Personally, I found these resources extremely helpful when studying for the exam. I advise you to study them as well.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-use-practice-tests&quot;&gt;4. Use Practice Tests&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.drupal-x.com/&quot; target=&quot;_blank&quot;&gt;Drupal-X&lt;/a&gt; has one of the best practice tests available for use. I recommend taking a few practice tests in order to understand how you might place on the Acquia certification.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-register-for-the-exam&quot;&gt;5. Register for the Exam&lt;/h3&gt;
+
+&lt;p&gt;With the other tips under your belt, you should already feel ready to take the certification exam. If you think you are ready, then it’s time to &lt;a href=&quot;https://www.webassessor.com/acquia&quot; target=&quot;_blank&quot;&gt;register&lt;/a&gt;. Your test can be taken both online and offline. Offline options are not available in all countries and cities, so check this option if you want to choose one. If you chose online, you will need to install a special program when registering for the exam.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-dont-cheat&quot;&gt;6. Don’t Cheat!&lt;/h3&gt;
+
+&lt;p&gt;You cannot use any materials during the exam, such as notebooks or pens. As you take the test, a moderator will observe through a webcam and a microphone. Yes, these devices are required for passing the test. Additionally, if the examiner is confused about how you arrived at a certain code solution, you may be asked to fix the problem or provide input. If you can’t do either, your exam may be considered a failed. So it’s best not to even try to cheat.&lt;/p&gt;
+
+&lt;h3 id=&quot;7-taking-the-exam&quot;&gt;7. Taking the Exam&lt;/h3&gt;
+
+&lt;p&gt;All exams consist of answering 60 single or multiple choice questions in 90 minutes. You do not need to write a line of code, or give free-form answers from your head. As were exams in school, the Acquia Certification exam can be psychologically difficult! In my experience, I felt confident on the first 20 questions. However, as I ran into some unknowns, my confidence shattered. I began to hesitate answering simple questions. If I had anything to share, it’d be that I advise you not to dwell on a question to which you do not know the answer. It is possible to skip the question. You can always come back to it later. This way, you’ll save time answering all the questions you’re certain of.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-obtaining-a-certificate&quot;&gt;8. Obtaining a Certificate&lt;/h3&gt;
+
+&lt;p&gt;If you are one of these lucky ones to have passed the test and received the certificate, put your coveted certificate badge on your resume and on your LinkedIn page! This will make you visible not only in your company but also for other employers.&lt;/p&gt;
+
+&lt;p&gt;Finally, if you’re in need of an Acquia-certified developer, drop us a line! Or, if you’re looking to learn more about Acquia certification, join us on Slack.&lt;/p&gt;</content><author><name>Alex Novak</name></author><summary type="html">Acquia’s certification program helps set the standard for assessing a programmer’s knowledge and experience with Drupal. By understanding which exams a developer has passed, employers know their exact skill level. Clients can rest assured that they are working with real professionals. Programmers and their colleagues can engage in friendly competition. It’s important for Acquia too; they look at the number of certified specialists when considering agency-partnership applications.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/img/8-tips-for-acquia-certification.png" /><media:content medium="image" url="https://drupal-contractors.github.io/img/8-tips-for-acquia-certification.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Future of Drupal is Now</title><link href="https://drupal-contractors.github.io/blog/2020/11/09/the-future-of-drupal-is-now/" rel="alternate" type="text/html" title="The Future of Drupal is Now" /><published>2020-11-09T08:00:00+00:00</published><updated>2020-11-09T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/09/the-future-of-drupal-is-now</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/09/the-future-of-drupal-is-now/">&lt;p&gt;People are often curious about the latest and greatest trends in any given project. &lt;a href=&quot;https://www.drupal.org/&quot; target=&quot;_blank&quot;&gt;Drupal&lt;/a&gt; is certainly no different, however we are not beholden to someone else’s decisions behind closed doors. The beauty of open source is that we can see these things play out in real time and even act on them, nudging things in a different direction or helping prioritize something that might otherwise have fallen off others’ radar. Here, we will explore a few of &lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives&quot; target=&quot;_blank&quot;&gt;Drupal’s Strategic Initiatives&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;front-end-and-design&quot;&gt;Front-End and Design&lt;/h3&gt;
+
+&lt;p&gt;Over the last decade, there has been a lot of effort to expand the appeal of Drupal beyond the developer community, bringing in a strong focus on UI/UX improvements and integrating more design standards. These projects further that effort.&lt;/p&gt;
+
+&lt;h4 id=&quot;admin-ui-and-javascript-modernization&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/admin-ui-js&quot; target=&quot;_blank&quot;&gt;Admin UI and JavaScript Modernization&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The administration interface has long been one of the sore spots for new users coming into Drupal for the first time. To the uninitiated, there is quite a learning curve. To modernize the Admin UI, developers have implemented ongoing user testing as well as interface improvements.&lt;/p&gt;
+
+&lt;p&gt;This initiative also includes an effort to enable a fully-functional, completely decoupled alternative to the standard Drupal admin pages, with React being used for a demonstration application. The various API improvements underlying this will make things like mobile administration apps much easier to build and allow them to be much more feature-complete.&lt;/p&gt;
+
+&lt;h4 id=&quot;media&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/media&quot; target=&quot;_blank&quot;&gt;Media&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This has long been a bit of a buggabear in Drupal. While there have been some fairly good media management solutions in the contributed space including modules like &lt;a href=&quot;https://www.drupal.org/project/entity_browser&quot; target=&quot;_blank&quot;&gt;Entity&lt;/a&gt; Browser and distributions like &lt;a href=&quot;https://www.drupal.org/project/lightning&quot; target=&quot;_blank&quot;&gt;Lightning&lt;/a&gt; and &lt;a href=&quot;https://www.drupal.org/project/varbase&quot; target=&quot;_blank&quot;&gt;Varbase&lt;/a&gt;, Drupal core has remained lacking. This initiative aims to standardize that and much of that work is now in Drupal core, with the remaining work focused on the media library component.&lt;/p&gt;
+
+&lt;h4 id=&quot;new-front-end-theme&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/olivero&quot; target=&quot;_blank&quot;&gt;New Front-End Theme&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Let’s face it: The default Bartik theme is showing its age. Initially built before mobile-first was really a thing, it has gradually fallen behind the times. This initiative is designing and building a completely new default front-end theme for Drupal with a modern look and feel.&lt;/p&gt;
+
+&lt;p&gt;In addition to an updated, cleaner design, Oliver will also be WCAG AA compliant and include a variety of additional functionality to support new features in Drupal core. This new theme began with a significant design review process, a description of which can be read on the &lt;a href=&quot;https://www.drupal.org/project/ideas/issues/3088378&quot; target=&quot;_blank&quot;&gt;Designs for new front-end theme for Drupal 9 issue page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;back-end-and-integrations&quot;&gt;Back-End and Integrations&lt;/h3&gt;
+
+&lt;p&gt;Meanwhile, the developer community is, of course, still always looking to stay ahead of new technologies and keep Drupal at the forefront of the latest development trends. These projects represent a continuance of that ongoing effort.&lt;/p&gt;
+
+&lt;h4 id=&quot;api-first&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/api-first&quot; target=&quot;_blank&quot;&gt;API-First&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;As more and more of the web is being built in a decoupled fashion, with the systems and applications presenting content to the users not necessarily being the ones in which it is created, Drupal needs to expose as much of that data and functionality as possible using current API standards. This initiative is part of that ongoing effort to standardize Drupal’s APIs and make it easier to set up integrations out of the box. There are numerous advantages to this approach from performance, to design flexibility, to create-once-use-anywhere. This initiative also serves to provide the necessary underlying changes for the Admin UI front-end project listed above.&lt;/p&gt;
+
+&lt;h4 id=&quot;configuration-management-20&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/cmi2&quot; target=&quot;_blank&quot;&gt;Configuration Management 2.0&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Configuration management has been in Drupal core since the development of Drupal 8, however there have remained many areas of improvement. The contributed space has endeavored to address many of those, however this initiative is aimed at bringing more of those improvements into core and streamline the developer experience.&lt;/p&gt;
+
+&lt;h4 id=&quot;automatic-updates&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/automatic-updates&quot; target=&quot;_blank&quot;&gt;Automatic Updates&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Keeping Drupal sites up to date has always been a pain, as with any other system, especially for larger projects with many components. This initiative strives to address at least some of that by allowing automatic Drupal core security and patch releases including functionality for code signing, A/B testing of updates and the like, with the potential to enable more significant updates in the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;content-and-other&quot;&gt;Content and Other&lt;/h3&gt;
+
+&lt;h4 id=&quot;workflow&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/workflow&quot; target=&quot;_blank&quot;&gt;Workflow&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Some of the biggest requirements from clients, especially on larger sites, often revolve around editorial workflows. Solid workflows are a must when dealing with teams of content creators and editors. Many improvements have made their way into Drupal core recently and this initiative is intended to build on that effort with a goal of bringing preview and staging of content directly into core. This initiative is in need of help getting it off the ground and you can learn more about its current status on the &lt;a href=&quot;https://www.drupal.org/project/ideas/issues/2721129&quot; target=&quot;_blank&quot;&gt;workflow initiative issue page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;documentation-and-help&quot;&gt;&lt;a href=&quot;https://www.drupal.org/about/strategic-initiatives/documentation&quot; target=&quot;_blank&quot;&gt;Documentation and Help&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Wondering how you can get involved in all of these projects? This is a great one to get your feet wet in. This initiative is really just the always-ongoing effort to improve and expand Drupal’s documentation. Anyone can get involved and help make everyone’s lives easier.&lt;/p&gt;
+
+&lt;h3 id=&quot;get-involved&quot;&gt;Get Involved&lt;/h3&gt;
+&lt;p&gt;Hopefully some of these issues are interesting to you, or you have a pressing need that could be addressed by one or more of them. We refer to Drupal as a “do-ocracy”: if you see something that you think needs to be addressed, jump in and help do it. We’re all better off when people pitch in, whatever their skill level. And if you’re looking to get first-hand experience on Drupal projects, join our &lt;a href=&quot;https://esteemed.io/&quot; target=&quot;_blank&quot;&gt;Esteemed Colleagues Community&lt;/a&gt;!&lt;/p&gt;</content><author><name>Sean Robertson</name></author><summary type="html">People are often curious about the latest and greatest trends in any given project. Drupal is certainly no different, however we are not beholden to someone else’s decisions behind closed doors. The beauty of open source is that we can see these things play out in real time and even act on them, nudging things in a different direction or helping prioritize something that might otherwise have fallen off others’ radar. Here, we will explore a few of Drupal’s Strategic Initiatives.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/img/the-future-of-drupal-is-now.jpg" /><media:content medium="image" url="https://drupal-contractors.github.io/img/the-future-of-drupal-is-now.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Sending Emails Using OOP and Dependency Injection in Drupal 8, 9</title><link href="https://drupal-contractors.github.io/blog/2020/11/09/sending-emails-using-oop-dependency-injection-drupal/" rel="alternate" type="text/html" title="Sending Emails Using OOP and Dependency Injection in Drupal 8, 9" /><published>2020-11-09T08:00:00+00:00</published><updated>2020-11-09T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/09/sending-emails-using-oop-dependency-injection-drupal</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/09/sending-emails-using-oop-dependency-injection-drupal/">&lt;p&gt;In Drupal, until now, the formation of an email is done using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hook_mail()&lt;/code&gt; hook. If you need to form more than one email, then the function grows by leaps and bounds, or provokes to write spaghetti. Often, the problem is complicated by the fact that emails can be complex, require data or services for some kind of logic, which makes the code even more difficult to maintain.&lt;/p&gt;
+
+&lt;p&gt;Until this hook is replaced with something more modern, we can do it ourselves! Fortunately, it’s not that difficult.&lt;/p&gt;
+
+&lt;p&gt;We do not need to invent anything. The Drupal Commerce 2 developers have already come up with everything for us. In this article, you will not only learn how they send emails, but how you can also apply their approach to your projects.&lt;/p&gt;
+
+&lt;p&gt;Some advantages include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Set standard parameter values for emails.&lt;/li&gt;
+  &lt;li&gt;Send render arrays as the content of the email.&lt;/li&gt;
+  &lt;li&gt;Use Dependency Injection and Services correctly.&lt;/li&gt;
+  &lt;li&gt;Break emails their own object, making it easier to form emails with more complex logic by methods and DI (Dependency Injection).&lt;/li&gt;
+  &lt;li&gt;Better organize your code in your project.&lt;/li&gt;
+  &lt;li&gt;Send emails in different languages, regardless of the original.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further we will write and analyze an analogue of what is in Drupal Commerce 2. If you compare them, they will be slightly different, but the principle and approach will be absolutely identical.&lt;/p&gt;
+
+&lt;h3 id=&quot;mailhandler---generating-and-sending-emails&quot;&gt;MailHandler - Generating and Sending Emails&lt;/h3&gt;
+
+&lt;p&gt;The @Mail plugins are responsible for sending emails to Drupal, and they are managed by the plugin.manager.mail manager. In principle, this service is sufficient for sending mail, but most likely you will not want to send emails with standard parameters. In order not to pass the same parameters every time, this mediator is introduced - MailHandler.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;src/Mail/MailHandler.php
+
+&amp;lt;?php
+
+namespace Drupal\example\Mail;
+
+use Drupal\Core\Language\LanguageDefault;
+use Drupal\Core\Language\LanguageManagerInterface;
+use Drupal\Core\Mail\MailManagerInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\StringTranslation\TranslationInterface;
+use Drupal\Core\StringTranslation\TranslationManager;
+
+/**
+ * Handles the assembly and dispatch of HTML emails.
+ */
+final class MailHandler {
+
+  /**
+  * The mail manager.
+  *
+  * @var \Drupal\Core\Mail\MailManagerInterface
+  */
+  protected $mailManager;
+
+  /**
+   * The language manager.
+   *
+   * @var \Drupal\Core\Language\LanguageManagerInterface
+   */
+  protected $languageManager;
+
+  /**
+   * The language default.
+   *
+   * @var \Drupal\Core\Language\LanguageDefault
+   */
+  protected $languageDefault;
+
+  /**
+   * The string translation service.
+   *
+   * @var \Drupal\Core\StringTranslation\TranslationInterface
+   */
+  private $stringTranslation;
+
+  /**
+   * Constructs a new MailHandler object.
+   *
+   * @param \Drupal\Core\Mail\MailManagerInterface $mail_manager
+   *   The mail manager.
+   * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
+   *   The language manager.
+   * @param \Drupal\Core\Language\LanguageDefault $language_default
+   *   The language default.
+   * @param \Drupal\Core\StringTranslation\TranslationInterface $string_translation
+   *   The string translation service.
+   */
+  public function __construct(MailManagerInterface $mail_manager,
+    LanguageManagerInterface $language_manager, LanguageDefault
+    $language_default, TranslationInterface $string_translation) {
+    $this-&amp;gt;mailManager = $mail_manager;
+    $this-&amp;gt;languageManager = $language_manager;
+    $this-&amp;gt;languageDefault = $language_default;
+    $this-&amp;gt;stringTranslation = $string_translation;
+  }
+
+  /**
+    * Composes and send email message.
+    *
+    * @param string $to
+    *   The email address or addresses where the message will be sent to.
+    * @param TranslatableMarkup $subject
+    *   The message subject. To be properly translated with body, it must be
+    *   TranslatableMarkup when we switch language.
+    * @param array $body
+    * @param array $params
+    *   Parameters to build the email.
+    *
+    * @return bool
+    *   TRUE if the email was sent successfully, FALSE otherwise.
+    *
+    * @see \Drupal\Core\Mail\MailManagerInterface::mail()
+    */
+  public function sendMail(string $to, TranslatableMarkup $subject, array $body, array $params = []): bool {
+    $default_params = ['headers' =&amp;gt; [
+        'Content-Type' =&amp;gt; 'text/html; charset=UTF-8;',
+        'Content-Transfer-Encoding' =&amp;gt; '8Bit',
+      ],
+      'id' =&amp;gt; 'mail',
+      'reply-to' =&amp;gt; NULL,
+      'subject' =&amp;gt; $subject,
+      'langcode' =&amp;gt; $this-&amp;gt;languageManager-&amp;gt;getCurrentLanguage()-&amp;gt;getId(),
+      // The body will be rendered in example_mail().
+      'body' =&amp;gt; $body,
+    ];
+
+    if (!empty($params['cc'])) {
+      $default_params['headers']['Cc'] = $params['cc'];
+    }
+
+    if (!empty($params['bcc'])) {
+      $default_params['headers']['Bcc'] = $params['bcc'];
+    }
+
+    $params = array_replace($default_params, $params);
+
+    // Change the active language to ensure the email is properly translated.
+    if ($params['langcode'] != $default_params['langcode']) {
+      $this-&amp;gt;changeActiveLanguage($params['langcode']);
+    }
+
+    $message = $this-&amp;gt;mailManager-&amp;gt;mail('example', $params['id'], $to, $params['langcode'], $params, $params['reply-to']);
+
+    // Revert back to the original active language.
+    if ($params['langcode'] != $default_params['langcode']) {
+      $this-&amp;gt;changeActiveLanguage($default_params['langcode']);
+    }
+
+    return (bool) $message['result'];
+  }
+
+  /**
+   * Changes the active language for translations.
+   *
+   * @param string $langcode
+   *   The langcode.
+   */
+  protected function changeActiveLanguage($langcode): void {
+    if (!$this-&amp;gt;languageManager-&amp;gt;isMultilingual()) {
+      return;
+    }
+
+    $language = $this-&amp;gt;languageManager-&amp;gt;getLanguage($langcode);
+
+    if (!$language) {
+      return;
+    }
+
+    // The language manager has no method for overriding the default
+    // language, like it does for config overrides. We have to change the
+    // default language service's current language.
+    // @see https://www.drupal.org/project/drupal/issues/3029010
+    $this-&amp;gt;languageDefault-&amp;gt;set($language);
+    $this-&amp;gt;languageManager-&amp;gt;setConfigOverrideLanguage($language);
+    $this-&amp;gt;languageManager-&amp;gt;reset();
+
+    // The default string_translation service, TranslationManager, has a
+    // setDefaultLangcode method. However, this method is not present on
+    // either of its interfaces. Therefore we check for the concrete class
+    // here so that any swapped service does not break the application.
+    // @see https://www.drupal.org/project/drupal/issues/3029003
+    if ($this-&amp;gt;stringTranslation instanceof TranslationManager) {
+      $this-&amp;gt;stringTranslation-&amp;gt;setDefaultLangcode($language-&amp;gt;getId());
+      $this-&amp;gt;stringTranslation-&amp;gt;reset();
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;constructor---dependency-injection&quot;&gt;Constructor - Dependency Injection&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/**
+ * Constructs a new MailHandler object.
+ *
+ * @param \Drupal\Core\Mail\MailManagerInterface $mail_manager
+ *   The mail manager.
+ * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
+ *   The language manager.
+ * @param \Drupal\Core\Language\LanguageDefault $language_default
+ *  The language default.
+ * @param \Drupal\Core\StringTranslation\TranslationInterface $string_translation
+ *   The string translation service.
+ */
+public function __construct(MailManagerInterface $mail_manager, LanguageManagerInterface $language_manager, LanguageDefault $language_default, TranslationInterface $string_translation) {
+  $this-&amp;gt;mailManager = $mail_manager;
+  $this-&amp;gt;languageManager = $language_manager;
+  $this-&amp;gt;languageDefault = $language_default;
+  $this-&amp;gt;stringTranslation = $string_translation;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dependency Injection of four services is performed in the handler:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugin.manager.mail&lt;/code&gt;: @Mail plugin manager - which are responsible for sending emails. Through the plugin data manager, we will make a request to send a email, and then he will go about his business - select a plugin and send it.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;language_manager&lt;/code&gt;: System language manager. Allows us to receive all the necessary information about languages.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;language.default&lt;/code&gt;: Repository of information about the current language.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string_translation&lt;/code&gt;: Translation manager. Responsible for how the strings will be translated and their direct translation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;change-language-for-sending-an-email--changeactivelanguage&quot;&gt;Change Language for Sending an Email — &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::changeActiveLanguage()&lt;/code&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/**
+ * Changes the active language for translations.
+ *
+ * @param string $langcode
+ *   The langcode.
+ */
+protected function changeActiveLanguage($langcode): void {
+  if (!$this-&amp;gt;languageManager-&amp;gt;isMultilingual()) {
+    return;
+  }
+
+  $language = $this-&amp;gt;languageManager-&amp;gt;getLanguage($langcode);
+
+  if (!$language) {
+    return;
+  }
+
+  // The language manager has no method for overriding the default
+  // language, like it does for config overrides. We have to change the
+  // default language service's current language.
+  // @see https://www.drupal.org/project/drupal/issues/3029010
+  $this-&amp;gt;languageDefault-&amp;gt;set($language);
+  $this-&amp;gt;languageManager-&amp;gt;setConfigOverrideLanguage($language);
+  $this-&amp;gt;languageManager-&amp;gt;reset();
+
+  // The default string_translation service, TranslationManager, has a
+  // setDefaultLangcode method. However, this method is not present on
+  // either of its interfaces. Therefore we check for the concrete class
+  // here so that any swapped service does not break the application.
+  // @see https://www.drupal.org/project/drupal/issues/3029003
+  if ($this-&amp;gt;stringTranslation instanceof TranslationManager) {
+    $this-&amp;gt;stringTranslation-&amp;gt;setDefaultLangcode($language-&amp;gt;getId());
+    $this-&amp;gt;stringTranslation-&amp;gt;reset();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:changeActiveLanguage()&lt;/code&gt; method is responsible for changing the current language at the time the request is executed.&lt;/p&gt;
+
+&lt;p&gt;First of all, it checks if the site is multilingual (has two or more languages). If not, it immediately exits. If the site is multilingual, it receives information about the language to which you want to switch the system. If there is no information about the language, the process is aborted. Further, if both conditions are satisfied, the process of switching the language to the one passed in the parameter occurs.&lt;/p&gt;
+
+&lt;p&gt;For this, information about the language is set in language.default and resets the current internal cache, then the same operation is performed for string_translation so that it understands whether it needs to be translated and into which language. This method is copy-paste from a commercial. In fact, this is a “crutch” for switching the current system language, since the kernel does not provide such an API that would comprehensively perform this. In the comments, links to issues are provided, if you are interested in this, you can “kick” and add such an API to the core. For example this allows you to send a email to a user in one language, calling it in another: A manager with an English interface will cause a email to be sent for a user with the selected Spanish language.&lt;/p&gt;
+
+&lt;h3 id=&quot;sending-email--sendmail&quot;&gt;Sending Email — &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::sendMail()&lt;/code&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/**
+ * Composes and send email message.
+ * @param string $to
+ *   The email address or addresses where the message will be sent to.
+ * @param TranslatableMarkup $subject
+ *   The message subject. To be properly translated with body, it must be
+ *   TranslatableMarkup when we switch language.
+ * @param array $body
+ *   A render array representing message body.
+ * @param array $params
+ *   Parameters to build the email.
+ *
+ * @return bool
+ *   TRUE if the email was sent successfully, FALSE otherwise.
+ *
+ * @see \Drupal\Core\Mail\MailManagerInterface::mail()
+ */
+public function sendMail(string $to, TranslatableMarkup $subject, array $body, array $params = []): bool {
+  $default_params = [
+    'headers' =&amp;gt; [
+      'Content-Type' =&amp;gt; 'text/html; charset=UTF-8;',
+      'Content-Transfer-Encoding' =&amp;gt; '8Bit',
+    ],
+    'id' =&amp;gt; 'mail',
+    'reply-to' =&amp;gt; NULL,
+    'subject' =&amp;gt; $subject,
+    'langcode' =&amp;gt; $this-&amp;gt;languageManager-&amp;gt;getCurrentLanguage()-&amp;gt;getId(),
+    // The body will be rendered in example_mail().
+    'body' =&amp;gt; $body,
+  ];
+
+  if (!empty($params['cc'])) {
+    $default_params['headers']['Cc'] = $params['cc'];
+  }
+
+  if (!empty($params['bcc'])) {
+    $default_params['headers']['Bcc'] = $params['bcc'];
+  }
+
+  $params = array_replace($default_params, $params);
+
+  // Change the active language to ensure the email is properly translated.
+  if ($params['langcode'] != $default_params['langcode']) {
+    $this-&amp;gt;changeActiveLanguage($params['langcode']);
+  }
+
+  $message = $this-&amp;gt;mailManager-&amp;gt;mail('example', $params['id'], $to, $params['langcode'], $params, $params['reply-to']);
+
+  // Revert back to the original active language.
+  if ($params['langcode'] != $default_params['langcode']) {
+    $this-&amp;gt;changeActiveLanguage($default_params['langcode']);
+  }
+
+  return (bool) $message['result'];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This method prepares the email for sending, sets the default values and sends them using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugin.manager.mail&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It takes as arguments:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;string $to: Email address where the email should be sent.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TranslatableMarkup $subject&lt;/code&gt;: The subject of the email. This argument differs from the commercial implementation. I deliberately made the TranslatableMarkup type so that the title does not come immediately in the line like in Drupal Commerce. If you pass a string here, it will not be translated!&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;array $body&lt;/code&gt;: Render an array with the body of the email. We will send emails through render arrays. This opens up many possibilities, for example, forming a email via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hook_theme()&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;array $params&lt;/code&gt;: An array of parameters for the email, just like in normal sending. In our case, it will also be used to be able to change the default parameters.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As a result, it returns a boolean value about the message sending status.&lt;/p&gt;
+
+&lt;p&gt;Inside the method, the first thing to do is set the default parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;headers&lt;/code&gt;: By default, all emails will be sent as HTML. In order for this to work correctly, you need some kind of module that can send HTML, for example, swiftmailer (it will be like an example dependency). If you don’t want to send HTML emails, remove the Content-Type.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt;: Key of the email. This value will come in the $key parameter of the hook_mail() hook. We set the default value to mail. You can override this value to alter emails or for other purposes.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reply-to&lt;/code&gt;: The e-mail that will be indicated for the reply in the email. By default, we set NULL, since we will pass this parameter as an argument when sending. If you don’t override this value when submitting, Drupal will substitute the default site email address.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subject&lt;/code&gt;: The subject of the email, taken from the argument.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;langcode&lt;/code&gt;: Current system language code. It is necessary to send a email, but it is not used in any way out of the box, so we have our own method for switching the language.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;body&lt;/code&gt;: The body of the email is a render array.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of these options will be available in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hook_mail()&lt;/code&gt;. If you need any additional information when altering emails, you can safely add it to this array.&lt;/p&gt;
+
+&lt;p&gt;Next, it is checked whether the value is passed in the additional parameters cc. If passed, the correct email header is set. Cc - email address where a copy of the email will be sent.&lt;/p&gt;
+
+&lt;p&gt;The same is done with bcc. Bcc - email address where a copy of the email will be sent, but the addressee (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$to&lt;/code&gt;) will not be able to see it.&lt;/p&gt;
+
+&lt;p&gt;Next, the values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$default_params&lt;/code&gt; are concatenated with additional values from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$params&lt;/code&gt; and stored in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$params&lt;/code&gt;. $default_params remains unchanged.&lt;/p&gt;
+
+&lt;p&gt;Then the language is checked from $params and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$default_params&lt;/code&gt;. If they differ (in $params when sending a language different from the currently active one), then the system language is switched to the language from $params using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::hangeActiveLanguage()&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;After the system language is switched, the message is sent using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugin.manager.mail&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;As soon as the sending process is completed, the system language switches back to what it was before the email was sent, so that all subsequent operations do not end up in the incorrect language.&lt;/p&gt;
+
+&lt;p&gt;At the end, the message sending status received from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugin.manager.mail&lt;/code&gt; is returned.&lt;/p&gt;
+
+&lt;h3 id=&quot;service-examplemail_handler&quot;&gt;Service example.mail_handler&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;services:
+  example.mail_handler:
+    class: Drupal\example\Mail\MailHandler
+    arguments: ['@plugin.manager.mail', '@language_manager', '@language.default', '@string_translation']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We just have to declare our class as a service with all the required services as arguments.&lt;/p&gt;
+
+&lt;h2 id=&quot;hook_mail&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hook_mail()&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;We have declared our service example.mail_handler for sending emails in HTML via render arrays and with support for language switching. Almost everything is ready, we just need to implement &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hook_mail()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We still need a hook, it must form a message ($message) to send.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/**
+ * Implements hook_mail().
+ *
+ * @see \Drupal\example\Mail\MailHandler
+ */
+function example_mail(string $key, array &amp;amp;$message, array $params): void {
+  /** @var \Drupal\Core\Render\RendererInterface $renderer */
+  $renderer = \Drupal::service('renderer');
+
+  if (isset($params['headers'])) {
+    $message['headers'] = array_merge($message['headers'], $params['headers']);
+  }
+
+  if (!empty($params['from'])) {
+    $message['from'] = $params['from'];
+  }
+
+  $message['subject'] = $params['subject'];
+  $message['body'][] = $renderer-&amp;gt;renderPlain($params['body']);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since all the main logic has been transferred to our service, we only form the final &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$message&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We pass the resulting headers.&lt;/li&gt;
+  &lt;li&gt;Set from whom the email (if specified).&lt;/li&gt;
+  &lt;li&gt;We indicate the title of the email.&lt;/li&gt;
+  &lt;li&gt;We render the render array into HTML string and set it as the body of the email.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We don’t need anything else. This is a fully functional service for sending emails.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to Use&lt;/h2&gt;
+
+&lt;p&gt;With this service, you can now send HTML emails very simply:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$subject = new TranslatableMarkup('My first mail!');
+$body = [
+  '#markup' =&amp;gt; '&amp;lt;strong&amp;gt;Hello World!&amp;lt;/strong&amp;gt;',
+];
+$mail_handler-&amp;gt;sendMail('example@example.com', $subject, $body);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;a-simple-example&quot;&gt;A Simple Example&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
+namespace Drupal\example\Mail;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Simple email message class.
+ */
+final class SimpleMail {
+
+  /**
+   * The mail handler.
+   *
+   * @var \Drupal\example\Mail\MailHandler
+   */
+  protected $mailHandler;
+
+  /**
+   * Constructs a new UserLoginEmail object.
+   *
+   * @param \Drupal\example\Mail\MailHandler $mail_handler
+   *   The mail handler.
+   */
+  public function __construct(MailHandler $mail_handler) {
+    $this-&amp;gt;mailHandler = $mail_handler;
+  }
+
+  /**
+   * Sends email.
+   *
+   * @return bool
+   *   The message status.
+   */
+  public function send(): bool {
+    $subject = new TranslatableMarkup('My first mail!');
+    $body = [
+      '#markup' =&amp;gt; '&amp;lt;strong&amp;gt;Hello World!&amp;lt;/strong&amp;gt;',
+    ];
+
+    return $this-&amp;gt;mailHandler-&amp;gt;sendMail('example@example.com', $subject, $body);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is the minimum that is needed to form a email as a service. It will need our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;example.mail_handler&lt;/code&gt; service and some method to send the email.&lt;/p&gt;
+
+&lt;p&gt;You can create interfaces and develop the idea further in order to standardize specific emails.&lt;/p&gt;
+
+&lt;h2 id=&quot;outcome&quot;&gt;Outcome&lt;/h2&gt;
+
+&lt;p&gt;Since we have simplified &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hook_mail()&lt;/code&gt; and expect that emails will go through our service, and it, in turn, expects render arrays, we need to somehow form these emails.&lt;/p&gt;
+
+&lt;p&gt;Email is a service. This means it is an object and it has support for Dependency Injection. And it’s extremely convenient!&lt;/p&gt;
+
+&lt;p&gt;This has significant advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can make abstract objects for emails or basic ones, extend them, improve them. In general, apply OOP to the fullest, so that the code becomes less in the end!&lt;/li&gt;
+  &lt;li&gt;You can easily find the objects responsible for the emails.&lt;/li&gt;
+  &lt;li&gt;Different emails are not mixed in one file. In general, the file for the email is easier to find than the function in the sheet of code.&lt;/li&gt;
+  &lt;li&gt;Dependency Injection allows you to correctly and conveniently connect all the required dependencies and use them to form an email.&lt;/li&gt;
+  &lt;li&gt;Complex emails can be broken down into methods - emails will be easier to edit in the future. Less spaghetti.&lt;/li&gt;
+  &lt;li&gt;It’s easier to implement similar emails with minimal differences.&lt;/li&gt;
+  &lt;li&gt;Deleting such emails, again, is easier - since everything is in one file, and all dependencies are clearly traced through DI.&lt;/li&gt;
+  &lt;li&gt;It is easy to find where a specific email is sent, again, due to DI.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And this is just what I encountered in real practice, having switched to this option for sending emails from custom modules.&lt;/p&gt;</content><author><name>Alex Novak</name></author><summary type="html">In Drupal, until now, the formation of an email is done using the hook_mail() hook. If you need to form more than one email, then the function grows by leaps and bounds, or provokes to write spaghetti. Often, the problem is complicated by the fact that emails can be complex, require data or services for some kind of logic, which makes the code even more difficult to maintain.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/img/oop-email.png" /><media:content medium="image" url="https://drupal-contractors.github.io/img/oop-email.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Custom Content Types: Drupal vs. WordPress</title><link href="https://drupal-contractors.github.io/blog/2020/11/09/custom-content-types/" rel="alternate" type="text/html" title="Custom Content Types: Drupal vs. WordPress" /><published>2020-11-09T08:00:00+00:00</published><updated>2020-11-09T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/09/custom-content-types</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/09/custom-content-types/">&lt;p&gt;By default, most CMSs offer static and dynamic content as common content types. In WordPress, these are Posts and Pages. In Drupal, they are Pages and Stories. These post types have a predefined set of fields: title, body, and description. But what if these values ​​don’t quite fit the website you are using? Certainly, you’ll need something else. With custom post types, you can create a content type and customize the fields and appearance, create your own taxonomies, (such as categories and tags), and more.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-do-we-need-to-use-custom-post-types&quot;&gt;Why Do We Need to Use Custom Post Types?&lt;/h3&gt;
+
+&lt;p&gt;We need custom post types in order to manage information in a way that is not like other types, and distinguishes them from traditional posts and pages. For example, for a clinic network site, custom content types might consist of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clinics&lt;/li&gt;
+  &lt;li&gt;Patients&lt;/li&gt;
+  &lt;li&gt;Doctors&lt;/li&gt;
+  &lt;li&gt;Directions&lt;/li&gt;
+  &lt;li&gt;Agreements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This way you get unlimited possibilities to transform your blog into a website with many functions, as well as a set of fields that each type of content will own.&lt;/p&gt;
+
+&lt;h3 id=&quot;wordpress-post-type-capabilities&quot;&gt;WordPress’ Post Type Capabilities&lt;/h3&gt;
+
+&lt;p&gt;By default, you only have two content types as mentioned above: Post and Page. There is no way to add any custom fields out of the box. You can only add a title, description, and feature image. You can add custom content types, as well as fields programmatically. However, to do so, you need to have at least a minimum level of PHP proficiency. But this is done extremely rarely, because there are plugins for WordPress that allow you to do this directly from the user interface: ACF (Advanced Custom Fields) and Types and Toolset.&lt;/p&gt;
+
+&lt;p&gt;These plugins are free-to-use and also on a paid platform. The free plan covers 90% of cases. But, if you need more advanced fields, such as Repeater Fields, ACF Blocks, Flexible Content Fields, Options Pages, Gallery Fields, or Clone Fields, you must invest in the Pro version.&lt;/p&gt;
+
+&lt;p&gt;When using these plugins, your possibilities expand. The disadvantage, however, is that they are tied to paid plugins. If something happens to them–like changing to a paid-only version–you will have to buy it.&lt;/p&gt;
+
+&lt;h3 id=&quot;drupals-post-type-capabilities&quot;&gt;Drupal’s Post Type Capabilities&lt;/h3&gt;
+
+&lt;p&gt;After installing Drupal, you can choose between 2 content types: Pages and Stories. Drupal is advantageous in this way, as its extensibility is integrated right into the core. For example, you can create any number of new custom content types and correlated custom fieleds. Take a look at some of the fields you can integrate to the core.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21BooleanItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;boolean&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21ChangedItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;changed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21comment%21src%21Plugin%21Field%21FieldType%21CommentItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;comment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21CreatedItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;created&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21datetime%21src%21Plugin%21Field%21FieldType%21DateTimeItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;datetime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21datetime_range%21src%21Plugin%21Field%21FieldType%21DateRangeItem.php/8.2.x&quot; target=&quot;_blank&quot;&gt;daterange&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21DecimalItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;decimal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21EmailItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;email&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21EntityReferenceItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;entity_reference&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21file%21src%21Plugin%21Field%21FieldType%21FileItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;file&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21FloatItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;float&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21image%21src%21Plugin%21Field%21FieldType%21ImageItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;image&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21IntegerItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;integer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21LanguageItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;language&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21link%21src%21Plugin%21Field%21FieldType%21LinkItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21options%21src%21Plugin%21Field%21FieldType%21ListFloatItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;list_float&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21options%21src%21Plugin%21Field%21FieldType%21ListIntegerItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;list_integer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21options%21src%21Plugin%21Field%21FieldType%21ListStringItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;list_string&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21MapItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;map&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21PasswordItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;password&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21path%21src%21Plugin%21Field%21FieldType%21PathItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;path&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21StringItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;string&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21StringLongItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;string_long&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21telephone%21src%21Plugin%21Field%21FieldType%21TelephoneItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;telephone&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21text%21src%21Plugin%21Field%21FieldType%21TextItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;text&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21text%21src%21Plugin%21Field%21FieldType%21TextLongItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;text_long&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21modules%21text%21src%21Plugin%21Field%21FieldType%21TextWithSummaryItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;text_with_summary&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21TimestampItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;timestamp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21UriItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;uri&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Field%21Plugin%21Field%21FieldType%21UuidItem.php/8.3.x&quot; target=&quot;_blank&quot;&gt;uuid&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These fields can be added to WordPress only when using the Pro version of ACF. With Drupal, you can do this after installing several free modules. Just like in WordPress, it is possible to add any type of content or field programmatically.&lt;/p&gt;
+
+&lt;p&gt;No matter which CMS you choose, WordPress and Drupal both have decent content customization options. Not certain which to choose? Still have questions? Talk with us! Our experts will help you create a project of any complexity for your needs.&lt;/p&gt;</content><author><name>Alex Novak</name></author><summary type="html">By default, most CMSs offer static and dynamic content as common content types. In WordPress, these are Posts and Pages. In Drupal, they are Pages and Stories. These post types have a predefined set of fields: title, body, and description. But what if these values ​​don’t quite fit the website you are using? Certainly, you’ll need something else. With custom post types, you can create a content type and customize the fields and appearance, create your own taxonomies, (such as categories and tags), and more.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/img/custom-content-types.jpg" /><media:content medium="image" url="https://drupal-contractors.github.io/img/custom-content-types.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to Transition Roles as a Developer</title><link href="https://drupal-contractors.github.io/blog/2020/11/09/how-to-transition-roles-as-a-developer/" rel="alternate" type="text/html" title="How to Transition Roles as a Developer" /><published>2020-11-09T08:00:00+00:00</published><updated>2020-11-09T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/09/how-to-transition-roles-as-a-developer</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/09/how-to-transition-roles-as-a-developer/">&lt;p&gt;So, you’re a developer. You write code for a living. You might have already been doing this for awhile, and you’re finding that you have more time throughout the day than you had before. Sound familiar?&lt;/p&gt;
+
+&lt;p&gt;If it does, that’s completely normal. As time goes on, you’re bound to get better at what you do. You may leverage a handful of libraries, so it’s faster (and easier) to do new tasks. Instead of taking 3 days to diagnose a problem or push a new feature, it now takes half a day.&lt;/p&gt;
+
+&lt;p&gt;What are you supposed to do with your leftover time? Take on more projects?&lt;/p&gt;
+
+&lt;p&gt;If you’re thinking about how to do things better, then you most likely are set to grow vertically. It’s a pattern we see often: Junior Developer, Mid-level Developer, then Senior Developer. Along the journey, you will learn new techniques, programming languages, and new paradigms that will help you push out better, stable, leaner code.&lt;/p&gt;
+
+&lt;p&gt;Obversely, there are some people who ask themselves how to manage my team more effectively. You might notice that you have a special knack for defining issues and assigning roles, minimizing the time and effort spent on a problem. If you like thinking like this, you might be on your way into a management role.&lt;/p&gt;
+
+&lt;p&gt;A management role consists of many things: knowing the inner workings of whatever industry you’re in; thinking about how to save time for your team; how to define and address issues as they arise. In this role, you’ll do less coding, focusing on organizational efforts instead.  By following this path, you might end up as a Team Lead or, in a larger organization, a Department Director role.&lt;/p&gt;
+
+&lt;p&gt;This management path requires that you improve skills you may have ignored in the past. If you’re considering making the leap from developer to a management-oriented role, here’s a list of things I had to work on during my transition:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Communication&lt;/strong&gt;: Because you’ll be talking / sending emails / defining tasks a lot, you have to be able to nicely refuse new features and explain why to clients. On the other hand, you might find yourself doing the exact opposite when talking to the team. Communication, no matter the stakeholder, is the most crucial element of transitioning your role.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.Empathy&lt;/strong&gt;: Knowing how your client feels and how your team is doing is crucial in making projects come together. Put yourself in their shoes. After some experience, you’re be that for explaining why a deadline went wrong, aligning expectations with reality, or making sure your team is dedicated to making it to that milestone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Active Listening&lt;/strong&gt;: In your meetings, try to get into the conversation. Ask questions: is the client sure that a particular feature is needed in this version? What is it trying to achieve? Can this be achieved in another way? Or, was the bug really squashed? Whenever you actively listen and document the project, your job gets easier and easier.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Responsibility&lt;/strong&gt;: Take ownership of your projects. As a project manager, you are responsible for the whole project, meaning budget, scope and value. You’ll also be owning the project from the CEO’s perspective (usually it means making sure you have the right team for the job, speaking up if you don’t).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Persistence&lt;/strong&gt;: As with any new task, be prepared to fail systematically. Learn your lesson every time. Try to have someone point out your errors. Remember: your responsibility is much more than a developer’s. You’re protecting all the resources involved–time, money, people–and making the best of them. One word of advice? Compartmentalize your goals, instead of working toward one big onerous task.&lt;/p&gt;
+
+&lt;p&gt;We live in a world where knowledge and experience is at our fingertips. Tap into this resource! Read articles and search for new information whenever you can. Bookmark a few bloggers, writers, and podcasters. Fill some of your personal time with personal development time. The change is within you, and it’s time to harness that energy.&lt;/p&gt;</content><author><name>Radu Camerzan</name></author><summary type="html">So, you’re a developer. You write code for a living. You might have already been doing this for awhile, and you’re finding that you have more time throughout the day than you had before. Sound familiar?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/img/how-to-transition-roles-as-a-developer.jpg" /><media:content medium="image" url="https://drupal-contractors.github.io/img/how-to-transition-roles-as-a-developer.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why We Started Drupal Contractors</title><link href="https://drupal-contractors.github.io/blog/2020/11/02/why-we-started-drupal-contractors/" rel="alternate" type="text/html" title="Why We Started Drupal Contractors" /><published>2020-11-02T08:00:00+00:00</published><updated>2020-11-02T08:00:00+00:00</updated><id>https://drupal-contractors.github.io/blog/2020/11/02/why-we-started-drupal-contractors</id><content type="html" xml:base="https://drupal-contractors.github.io/blog/2020/11/02/why-we-started-drupal-contractors/">&lt;p&gt;I can hardly believe that it has been 5 years since we started Drupalcontractors.com. Over the past year we have labored over re-inventing the site. My other firm Celebrate Drupal has funded the build out of an entirely new site. The site is still in Drupal 7 as it was started last July 2017 and we just were not comfortable with D8 at the time and replacing Profile 2, the module used to control our Profiles.&lt;/p&gt;
+
+&lt;h2 id=&quot;drupal-is-a-community&quot;&gt;Drupal is a Community&lt;/h2&gt;
+
+&lt;p&gt;Since early on in the history of the world wide web there have always been job and freelancer sites. As an early Internet entrepreneur I aso operated a niche site in partnership with Career Builder from 1996 to 2006 that focused on the changing manufacturing world. I learned there the special relationships that people who focus on a particluar niche market form. How targeted industry content not only helps inform people of goings on, or a new direction in their specific niche can not only help them advance and grow in their career and finding the next opportunity, not just help find the next ideal team member, but also build a community.&lt;/p&gt;
+
+&lt;p&gt;Drupal as many here know is already that. It is why I chose to focus on it as my own career and leverage the power of Open Source, and contribute back to it in every way that I could. We view Drupal Contractors as just an extension of the Drupal.org community. We work closely with the Drupal Association to find opportunities to sponsor and support ongong projects to advance the product.&lt;/p&gt;
+
+&lt;p&gt;In short we hope you find our platform useful and relevant to our industry of Drupal WCMS development. If you have any suggestions please don’t hesitate to reach out so we can improve how we deliver the worlds best and largest platform to find Drupal development and management resources.&lt;/p&gt;</content><author><name>Chris McGrath</name></author><summary type="html">I can hardly believe that it has been 5 years since we started Drupalcontractors.com. Over the past year we have labored over re-inventing the site. My other firm Celebrate Drupal has funded the build out of an entirely new site. The site is still in Drupal 7 as it was started last July 2017 and we just were not comfortable with D8 at the time and replacing Profile 2, the module used to control our Profiles.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drupal-contractors.github.io/uploads/neonbrand-1-aa2fadydc-unsplash.jpg" /><media:content medium="image" url="https://drupal-contractors.github.io/uploads/neonbrand-1-aa2fadydc-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
